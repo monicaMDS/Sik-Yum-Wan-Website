@@ -1,0 +1,78 @@
+.about-syw {
+  background-color: var(--blue);
+}
+
+.container {
+  position: relative;
+  max-width: 500px;
+  margin: auto;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.controls {
+  position: relative;
+  text-align: center;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  border-radius: 100%;
+  background-color: transparent;
+  z-index: 1;
+}
+
+/* lazy susan food images */
+.item-2 img {
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+/* .item.active {
+    background-color: blue;
+  } */
+
+.susan {
+  display: block;
+  max-width: 200%;
+  overflow: visible;
+  height: auto;
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+svg {
+  height: 300px;
+  overflow: visible;
+  width: 300px;
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.st0 {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 2;
+  stroke-miterlimit: 1;
+}
+
+.start {
+  position: absolute;
+  top: 50%;
+  right: -30px;
+}

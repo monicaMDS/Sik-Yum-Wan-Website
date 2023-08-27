@@ -1,0 +1,107 @@
+/* SETUP */
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --beige: #fee2bc;
+  --yellow: #f2e23f;
+  --orange: #f64423;
+  --blue: #0d6ca5;
+  --black: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--orange);
+}
+
+/* NAVIGATION */
+nav {
+  display: flex;
+  background-color: var(--orange);
+  gap: 2rem;
+  color: var(--yellow);
+}
+
+li {
+  list-style: none;
+}
+
+.home-link img {
+  position: relative;
+  left: 25%;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: var(--blue);
+  color: var(--yellow);
+  text-align: center;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+footer a {
+  color: var(--yellow);
+  text-decoration: none;
+  padding: 1rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer img {
+  max-width: 70%;
+  height: auto;
+  padding: 2rem;
+}
+
+.to-top {
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+/*HEADER */
+header {
+  display: grid;
+  max-height: 100vh;
+  width: auto;
+  background-color: var(--orange);
+}
+
+.gold-bao {
+  max-height: 10%;
+  width: auto;
+}
+
+/* EVENT PAGE HEADER */
+#event-header {
+}
+
+h1 {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 10vw;
+  color: var(--yellow);
+}
+
+.event-nav {
+  max-width: 3rem;
+  height: auto;
+}
+
+#gold-bao-vote {
+  display: grid;
+}
