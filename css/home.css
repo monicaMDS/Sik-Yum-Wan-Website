@@ -2,6 +2,14 @@
   background-color: var(--blue);
 }
 
+.landing-logo {
+  max-width: 50%;
+  height: auto;
+  position: absolute;
+  left: 25%;
+}
+
+/* LAZY SUSAN STYLING */
 .container {
   position: relative;
   max-width: 500px;
@@ -28,6 +36,7 @@
   border-radius: 100%;
   background-color: transparent;
   z-index: 1;
+  transition: all 1s ease-in-out;
 }
 
 /* lazy susan food images */
@@ -35,6 +44,10 @@
   max-width: 100%;
   height: auto;
   text-align: center;
+}
+
+.susan-mooncake {
+  /*   transition: all 1s ease-in-out; */
 }
 
 /* .item.active {
@@ -75,4 +88,49 @@ svg {
   position: absolute;
   top: 50%;
   right: -30px;
+}
+
+/* 
+
+LANDING DESCRIPTION 
+
+*/
+.landing-desc {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  color: var(--yellow);
+  text-align: center;
+}
+
+.landing-desc div {
+}
+
+.landing-desc img {
+  max-width: 80%;
+  height: auto;
+  justify-self: center;
+}
+
+.landing-desc h2 {
+  color: var(--orange);
+  text-shadow: -2px 0 var(--yellow), 0 2px var(--yellow), 2px 0 var(--yellow),
+    0 -2px var(--yellow);
+  text-align: center;
+  font-size: clamp(5rem, 7rem, 14rem);
+}
+
+.landing-desc p {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.landing-desc h6 {
+  text-align: center;
+  font-family: Proxima Nova;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  padding-top: 5rem;
 }

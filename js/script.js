@@ -1,4 +1,10 @@
-//LAZY SUSAN
+/******
+ * LAZY SUSAN
+ ******/
+
+/***
+ * SPIN FUNCTION
+ ***/
 gsap.registerPlugin(MotionPathPlugin);
 
 const circlePath = MotionPathPlugin.convertToPath("#holder", false)[0];
@@ -97,7 +103,27 @@ function moveWheel(amount, i, index) {
   });
 }
 
-Resources;
+//Resources;
+
+/***
+ * ITEM HOVERS
+ ***/
+
+//mooncake hover
+const susanMooncake = document.querySelector(".susan-mooncake");
+susanMooncake.addEventListener("mouseover", () => {
+  console.log("mooncake event mouseover");
+  susanMooncake.setAttribute("src", "../assets/images/mooncake-hover.png");
+  /*   susanMooncake.style.transition = "all 1s ease-in-out"; */
+});
+
+susanMooncake.addEventListener("mouseout", () => {
+  console.log("mooncake event mouseout");
+  susanMooncake.setAttribute("src", "../assets/images/mooncake-default.png");
+  /*   susanMooncake.style.transition = "all 1s ease-in-out"; */
+});
+
+susanMooncake.addEventListener("click", () => {});
 
 //footer functionality
 const toTopBtn = document.querySelector(".to-top");
