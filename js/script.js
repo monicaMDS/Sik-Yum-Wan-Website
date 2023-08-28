@@ -125,6 +125,54 @@ susanMooncake.addEventListener("mouseout", () => {
 
 susanMooncake.addEventListener("click", () => {});
 
+//desc hover
+
+let tween = gsap.to(".sik-desc", {
+  duration: 0.3,
+  ease: "bounce.out",
+  rotate: 15,
+});
+
+tween.pause();
+//sik description
+const sikDesc = document.querySelector(".sik-desc");
+sikDesc.addEventListener("mouseover", () => {
+  console.log("sik desc mouseover");
+  sikDesc.setAttribute("src", "../assets/images/sik-desc-hover.png");
+  /*   sikDesc.style.transition = "all 1s ease-in-out"; */
+});
+
+sikDesc.addEventListener("mouseout", () => {
+  console.log("sik desc mouseout");
+  sikDesc.setAttribute("src", "../assets/images/sik-desc-default.png");
+  /*   tween.restart();
+  tween.pause(); */
+});
+
+//yum description
+const yumDesc = document.querySelector(".yum-desc");
+yumDesc.addEventListener("mouseover", () => {
+  console.log("yum desc mouseover");
+  yumDesc.setAttribute("src", "../assets/images/yum-desc-hover.png");
+});
+
+yumDesc.addEventListener("mouseout", () => {
+  console.log("yum desc mouseout");
+  yumDesc.setAttribute("src", "../assets/images/yum-desc-default.png");
+});
+
+//wan description
+const wanDesc = document.querySelector(".wan-desc");
+wanDesc.addEventListener("mouseover", () => {
+  console.log("wan desc mouseover");
+  wanDesc.setAttribute("src", "../assets/images/wan-desc-hover.png");
+});
+
+wanDesc.addEventListener("mouseout", () => {
+  console.log("wan desc mouseout");
+  wanDesc.setAttribute("src", "../assets/images/wan-desc-default.png");
+});
+
 //footer functionality
 const toTopBtn = document.querySelector(".to-top");
 

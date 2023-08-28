@@ -1,7 +1,3 @@
-.about-syw {
-  background-color: var(--blue);
-}
-
 .landing-logo {
   max-width: 50%;
   height: auto;
@@ -97,16 +93,18 @@ LANDING DESCRIPTION
 */
 .landing-desc {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
   color: var(--yellow);
   text-align: center;
 }
 
 .landing-desc div {
+  justify-self: center;
 }
 
 .landing-desc img {
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
   justify-self: center;
 }
@@ -127,10 +125,31 @@ LANDING DESCRIPTION
 
 .landing-desc h6 {
   text-align: center;
-  font-family: Proxima Nova;
+  font-family: "proxima-nova", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
   padding-top: 5rem;
+}
+
+/*  
+* DESCRIPTION 
+*/
+
+.about-syw {
+  background-color: var(--blue);
+}
+
+.about-syw div {
+  display: block;
+  text-align: center;
+  grid-template-columns: auto;
+}
+
+.desc-logo {
+  justify-self: center;
+  padding: 3rem;
+  max-width: 33%;
+  height: auto;
 }
