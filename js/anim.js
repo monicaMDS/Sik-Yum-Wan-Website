@@ -182,24 +182,6 @@ susanMooncake.addEventListener("mouseout", () => {
 
 susanMooncake.addEventListener("click", () => {});
 
-//desc hover
-let tween = gsap.to(".sik-desc", {
-  duration: 0.3,
-  ease: "bounce.out",
-  rotate: 15,
-});
-
-tween.pause();
-
-//footer functionality
-/* const toTopBtn = document.querySelector(".to-top");
-
-toTopBtn.addEventListener("mouseover", () => {
-  console.log("footer hovered");
-  toTopBtn.setAttribute("src", "../assets/icons/to-top-hover.png");
-});
-
-toTopBtn.addEventListener("mouseout", () => {
-  console.log("footer-button unhovered");
-  toTopBtn.setAttribute("src", "../assets/icons/to-top-default.png");
-}); */
+/******************
+ * EVENT PAGE HOVERS
+ * ******************/

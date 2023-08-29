@@ -15,47 +15,58 @@
     <link rel="stylesheet" href="https://use.typekit.net/czm7smv.css">
 
     <!--javascript links-->
-    <script src="../js/script.js" defer></script>
-    <script src="../js/transitions.js" defer></script>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/anim.js" defer></script>
+
+    <!--GSAP animation links-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
 
 </head>
 
 <body>
     <!--NAV BAR-->
+    <a href="../index.html" class="arch">
+        <img class="landing-logo" src="../assets/logos/logo-arched.png" alt="srched sik yum wan logo" />
+    </a>
     <nav>
         <ul>
-            <i class="fa-solid fa-bars"></i>
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-bars fa-2xl"></i>
+            <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
         </ul>
-        <a class="arch-home-link" href="../index.html">
-            <img src="../assets/logos/logo-arched.png" alt="sik yum wan logo">
-        </a>
     </nav>
 
-    <header id="event-header">
+    <section id="event-header">
 
-        <h1>MOON CAKEVIEW</h1>
-        <button>SEE MORE NOW</button>
-        <img class="event-nav" src="../assets/logos/sik-logo.png" alt="sik logo">
-        <img class="event-nav" src="../assets/logos/yum-logo.png" alt="yum logo">
-        <img class="event-nav" src="../assets/logos/wan-logo.png" alt="wan logo">
+        <!--hero image-->
+        <div class="event-page-img">
+            <h1>moon cakeview</h1>
+            <button class="mooncake-view-event bounce-ani">see more now</button>
+        </div>
 
-    </header>
+        <!--event navigation-->
+        <div class="event-nav">
+            <img class="event-nav-img" src="../assets/logos/sik-logo.png" alt="sik logo">
+            <img class="event-nav-img" src="../assets/logos/yum-logo.png" alt="yum logo">
+            <img class="event-nav-img" src="../assets/logos/wan-logo.png" alt="wan logo">
+        </div>
+
+    </section>
 
 </body>
 
 <footer>
-    <img src="../assets/logos/footer-chinese-logo.png" alt="chinese sik yum wan">
-    <img src="../assets/logos/full-logo-x.png">
+    <img src="../assets/logos/footer-chinese-logo.png" alt="chinese sik yum wan" />
+    <img src="../assets/logos/full-logo-x.png" />
     <li>
-        <a href="../index.html">HOME</a>
-        <a href="../index.html">PROFILE</a>
-        <a href="../index.html">EVENTS</a>
-        <a href="../index.html">GOLDEN BAO</a>
+        <a href="../index.html">home</a>
+        <a href="./profile.html">profile</a>
+        <a href="./event.html">events</a>
+        <a href="./golden-bao.html">golden bao</a>
     </li>
 
-    <img class="to-top" src="../assets/icons/to-top-default.png">
-
+    <div class="to-top bounce-ani">
+    </div>
 </footer>
 
 </html>
