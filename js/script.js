@@ -63,7 +63,7 @@ tl.to(
   0
 );
 
-document.getElementById("prev").addEventListener("click", function () {
+/* document.getElementById("prev").addEventListener("click", function () {
   var i = 0;
 
   var theArray = items;
@@ -80,10 +80,23 @@ document.getElementById("prev").addEventListener("click", function () {
   }
 
   return moveWheel(-itemStep);
+}); */
+
+const nextArrow = document.querySelector("#next");
+
+nextArrow.addEventListener("click", function () {
+  return moveWheel(itemStep);
 });
 
-document.getElementById("next").addEventListener("click", function () {
-  return moveWheel(itemStep);
+//next arrow hover
+nextArrow.addEventListener("mouseover", () => {
+  console.log("nextArrow mouseover");
+  nextArrow.setAttribute("src", "../assets/icons/arrow-hover.png");
+});
+
+nextArrow.addEventListener("mouseout", () => {
+  console.log("nextArrow mouseout");
+  nextArrow.setAttribute("src", "../assets/icons/arrow-default.png");
 });
 
 function moveWheel(amount, i, index) {
