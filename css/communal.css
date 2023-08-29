@@ -71,6 +71,17 @@ li {
   list-style: none;
 }
 
+li a {
+  text-transform: uppercase;
+  color: var(--yellow);
+  text-decoration: none;
+  padding: 1rem;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
 .home-link img {
   padding: 1rem;
   max-width: 30%;
@@ -87,16 +98,6 @@ footer {
   font-weight: 600;
   font-style: normal;
   font-size: 2rem;
-}
-
-footer a {
-  color: var(--yellow);
-  text-decoration: none;
-  padding: 1rem;
-}
-
-footer a:hover {
-  text-decoration: underline;
 }
 
 footer img {
