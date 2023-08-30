@@ -22,6 +22,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--orange);
+  background-image: url(../assets/images/paper-overlay.png);
+  background-blend-mode: overlay;
 }
 
 section {
@@ -52,6 +54,16 @@ h2 {
   text-transform: uppercase;
 }
 
+/* event listing headings */
+h4 {
+  padding: 1rem;
+  color: var(--yellow);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
 /* NAVIGATION */
 
 .arch {
@@ -68,11 +80,18 @@ h2 {
   z-index: 3;
 }
 
+.landing-x-logo {
+  max-width: 20%;
+  height: auto;
+}
+
 .pop-nav {
   display: none;
 }
 
 nav {
+  display: flex;
+  align-items: center;
   position: sticky;
   height: 20%;
   width: auto;
@@ -81,10 +100,9 @@ nav {
   padding: 2rem;
 }
 
-nav div {
-  display: flex;
-  justify-content: space-between;
-  gap: 3rem;
+nav ul a {
+  color: var(--yellow);
+  padding: 1rem;
 }
 
 li {
@@ -155,9 +173,77 @@ header {
   background-color: var(--orange);
 }
 
-.gold-bao {
-  max-height: 10%;
-  width: auto;
+/* 
+
+EVENT PAGE STYLING 
+
+*/
+
+/* GENERAL LAYOUT */
+.event-section {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 20vh 80vh;
+  text-align: center;
+  grid-template-areas: "header header header";
+  justify-content: center;
+}
+
+.event-entry {
+  padding: 1rem;
+  margin: 2rem;
+}
+
+.entry-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* GENERAL TYPOGRAPHY */
+.event-section h1 {
+  font-size: clamp(3rem, 6rem, 9rem);
+  grid-area: header;
+}
+
+.event-entry p {
+  color: var(--yellow);
+  padding-bottom: 1rem;
+  font-size: clamp(1rem, 1.5rem, 2rem);
+}
+
+.o-font p,
+.o-font h4 {
+  color: var(--orange);
+}
+
+/* HEART BUTTON */
+
+.heart {
+  background-size: contain;
+  background-position: center;
+
+  width: 52px;
+  height: 45px;
+}
+
+/* orange heart */
+.heart-o {
+  background-image: url(../assets/icons/heart-orange-default.png);
+}
+
+.heart-o:hover {
+  background-image: url(../assets/icons/heart-orange-hover.png);
+}
+
+/* yellow heart */
+.heart-y {
+  background-image: url(../assets/icons/heart-yellow-default.png);
+}
+
+.heart-y:hover {
+  background-image: url(../assets/icons/heart-yellow-hover.png);
 }
 
 /* EVENT PAGE HEADER */
@@ -171,31 +257,37 @@ header {
   text-align: center;
   border-radius: 80px;
   max-width: 80%;
-  height: auto;
+  height: 80%;
   border: 2px solid var(--black);
   padding: 8rem;
   text-transform: uppercase;
 }
 
 .event-page-img h1 {
-  font-size: 180px;
-  font-weight: 700;
+  font-size: clamp(10px, 11rem, 12rem);
+  /* font-weight: 700; */
   text-shadow: -2px 0 var(--black), 0 2px var(--black), 2px 0 var(--black),
     0 -2px var(--black);
 }
 
 .event-nav {
   display: flex;
-  justify-content: center;
-  padding: 1rem;
-  gap: 2rem;
+  justify-content: space-evenly;
+  padding: 2rem;
 }
 
 .event-nav-img {
-  display: flex;
-  max-width: 8%;
-  height: auto;
+  max-width: 7%;
+  height: 10%;
 }
+
+.event-nav img:hover {
+  transform: scale(1, 1);
+}
+
+/* .event-nav-img:hover {
+  transform: scale(1, 1);
+} */
 
 .mooncake-view-event {
   color: var(--yellow);
@@ -205,7 +297,7 @@ header {
   text-transform: uppercase;
   padding: 1rem;
 
-  font-size: clamp(1rem, 2rem, 5rem);
+  font-size: clamp(20px, 2rem, 5rem);
   font-weight: 600;
   text-shadow: -2px 0 var(--black), 0 2px var(--black), 2px 0 var(--black),
     0 -2px var(--black);
@@ -218,16 +310,206 @@ header {
   text-shadow: none;
 }
 
-#gold-bao-vote {
-  display: grid;
+/* SECTION 1 | EVENT LISTING STYLING */
+
+.event-miss {
+  background-color: var(--beige);
 }
 
-/* LOCAL STORIES */
+.event-miss h1 {
+  color: var(--orange);
+}
+
+.miss-e-img {
+  border: 2px solid var(--orange);
+}
+
+.event-list-img {
+  width: 549px;
+  height: 496px;
+
+  border-radius: 20px;
+  border: 2px solid var(--yellow);
+
+  background-position: center;
+  background-size: cover;
+}
+
+.e-entry-1-img {
+  background-image: url(../assets/event-images/yum-cha-wide.webp);
+}
+
+.e-entry-2-img {
+  background-image: url(../assets/event-images/mooncake-wide.webp);
+}
+
+.e-entry-3-img {
+  background-image: url(../assets/event-images/mooncake-wide.webp);
+}
+
+.e-entry-5-img {
+  background-image: url(../assets/event-images/In-the-Mood-for-Love.jpg);
+}
+
+.e-entry-6-img {
+  background-image: url(../assets/event-images/In-the-Mood-for-Love.jpg);
+}
+
+.e-entry-7-img {
+  background-image: url(../assets/event-images/In-the-Mood-for-Love.jpg);
+}
+
+.e-entry-8-img {
+  background-image: url(../assets/event-images/In-the-Mood-for-Love.jpg);
+}
+
+.e-entry-9-img {
+  background-image: url(../assets/event-images/In-the-Mood-for-Love.jpg);
+}
+
+.e-entry-10-img {
+  background-image: url(../assets/event-images/In-the-Mood-for-Love.jpg);
+}
+
+.e-entry-11-img {
+  background-image: url(../assets/event-images/In-the-Mood-for-Love.jpg);
+}
+
+.e-entry-12-img {
+  background-image: url(../assets/event-images/kung-fu-hustle.jpg);
+}
+
+/* SECTION 2 | SIK EVENTS */
+.event-sik h1 {
+  color: var(--yellow);
+}
+
+/* SECTION 3 | YUM EVENTS */
+.event-yum {
+  background-color: var(--blue);
+  color: var(--yellow);
+}
+
+/* 
+
+GOLDEN BAO STYLING 
+
+*/
+
+/* .gold-bao-land {
+  display: grid;
+  grid-template-columns: 10vw 40vw 40vw 10vw;
+  grid-template-rows: 40vh 40vh 20vh;
+  grid-template-areas: "title title title title";
+  text-align: center;
+  justify-content: center;
+}
+
+.gold-bao-land h1 {
+  grid-area: title;
+  font-weight: 900;
+  font-size: 300px;
+} */
+
+/* Gold bao landing section */
+
+.gold-bao-land {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.gold-bao-land h1 {
+  font-weight: 900;
+  font-size: 300px;
+}
+
+.gold-bao-land h3 {
+  color: var(--yellow);
+  font-weight: 600;
+  font-size: clamp(1rem, 3rem, 4rem);
+}
+
+.gold-bao {
+  position: absolute;
+  margin-top: 17rem;
+
+  z-index: 3;
+  max-height: 30%;
+  width: auto;
+}
+
+/* Voting Store grid */
 
 .store-grid {
+  height: 150vh;
   display: grid;
+  grid-template-rows: 70vh 40vh 40vh;
+  grid-template-columns: 50vw 50vw;
+  background-color: var(--beige);
+  color: var(--orange);
 }
 
-.gold-bao-vote {
-  display: grid;
+.store-grid div {
+  padding: 2rem;
+  border: 2px solid var(--black);
 }
+
+.vote-item {
+  text-align: left;
+}
+
+.vote-item h2 {
+  font-size: clamp(2rem, 4rem, 5rem);
+  font-weight: 900;
+}
+
+.item-title {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.db-item {
+  background-color: var(--yellow);
+}
+
+.bbq-duck-item {
+  background-color: var(--orange);
+  display: flex;
+  margin: auto;
+}
+
+.bbq-duck-item h2 {
+  font-size: clamp(3rem, 10rem, 16rem);
+  color: var(--yellow);
+}
+
+.bbq-duck-item img {
+  max-width: 20%;
+  height: auto;
+  z-index: 2;
+  position: absolute;
+}
+
+.sun-world-item {
+  background-color: var(--yellow);
+}
+
+.sun-hk-item {
+  background-color: var(--beige);
+}
+
+.woo-item {
+  background-color: var(--orange);
+}
+
+.woo-item h2 {
+  color: var(--yellow);
+}
+
+/* .gold-bao-vote {
+  display: grid;
+} */
+
+/* LOCAL STORIES */

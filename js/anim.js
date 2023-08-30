@@ -185,3 +185,28 @@ susanMooncake.addEventListener("click", () => {});
 /******************
  * EVENT PAGE HOVERS
  * ******************/
+
+/* const eventNav = documnet.querySelector(".event-nav-img");
+
+eventNav.addEventListener() */
+
+/* const heartO = document.querySelectorAll(".heart-o");
+console.log(heartO);
+
+heartO.addEventListener("click", (hearts) => {
+  console.log("heart clicked");
+  hearts.forEach((heart) => {
+    heart.setAttribute("src", "../assets/icons/heart-orange-hover.png");
+  }); */
+/*   gsap.fromTo(
+    heartO,
+    {
+      scale: 0.5,
+    },
+    {
+      duration: 0.5,
+      scale: 1,
+      ease: "bounce.out",
+    }
+  ); */
+/* }); */
