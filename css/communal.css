@@ -445,6 +445,7 @@ GOLDEN BAO STYLING
 .store-grid {
   height: 150vh;
   display: grid;
+  text-align: center;
   grid-template-rows: 70vh 40vh 40vh;
   grid-template-columns: 50vw 50vw;
   background-color: var(--beige);
@@ -453,9 +454,69 @@ GOLDEN BAO STYLING
 
 .store-grid div {
   padding: 2rem;
-  border: 2px solid var(--black);
+  border: 2px solid var(--yellow);
 }
 
+/* Voting Area */
+
+form {
+  max-width: 100%;
+  height: auto;
+  margin: 2rem 1rem 1rem 0rem;
+  text-align: left;
+}
+
+input[type="submit"] {
+  text-transform: uppercase;
+  border: 4px solid var(--orange);
+  background-color: var(--beige);
+  color: var(--orange);
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 1rem;
+  width: 20%;
+  border-radius: 60px;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--orange);
+  color: var(--beige);
+  border: 6px solid var(--blue);
+}
+
+textarea {
+  resize: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 90%;
+  height: auto;
+  padding: 3rem;
+  border-radius: 60px;
+  border: 6px solid var(--orange);
+  background-color: var(--beige);
+  color: var(--orange);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+select {
+  width: 90%;
+  padding: 1rem;
+  border-radius: 60px;
+  border: 6px solid var(--orange);
+  background-color: var(--beige);
+  color: var(--orange);
+
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+select:hover {
+  background-color: var(--blue);
+  color: var(--yellow);
+}
+
+/* grid items */
 .vote-item {
   text-align: left;
 }
@@ -465,47 +526,190 @@ GOLDEN BAO STYLING
   font-weight: 900;
 }
 
+.vote-item p {
+  font-weight: 700;
+  font-size: clamp(1rem, 1.5rem, 2rem);
+}
+
+span {
+  font-weight: 900;
+}
+
 .item-title {
   font-weight: 900;
   text-transform: uppercase;
 }
 
+/* DRAGON BOAT */
 .db-item {
   background-color: var(--yellow);
+  font-size: clamp(2rem, 8rem, 9rem);
+  background-image: url(../assets/images/yum-cha-select.png);
+  background-size: contain;
+  background-position: center;
+  background-blend-mode: multiply;
 }
 
+.db-item h2 {
+  color: var(--yellow);
+  text-shadow: -12px 0 var(--orange), 0 12px var(--orange), 12px 0 var(--orange),
+    0 -12px var(--orange);
+}
+
+.db-item:hover {
+  background-color: var(--blue);
+  background-blend-mode: normal;
+}
+
+.db-item:hover h2 {
+  color: var(--yellow);
+  font-size: clamp(5rem, 6rem, 7rem);
+  transform: scaleX(1.5);
+}
+
+/* BBQ DUCK */
 .bbq-duck-item {
   background-color: var(--orange);
   display: flex;
-  margin: auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bg-img {
+  background-image: url(../assets/images/cafe-bbq-duck.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .bbq-duck-item h2 {
-  font-size: clamp(3rem, 10rem, 16rem);
+  font-size: clamp(3rem, 10rem, 13rem);
   color: var(--yellow);
+  z-index: 0;
 }
 
 .bbq-duck-item img {
-  max-width: 20%;
-  height: auto;
-  z-index: 2;
-  position: absolute;
+  max-height: 100%;
+  /* position: absolute; */
+  z-index: 1;
+  width: auto;
 }
 
+.bbq-duck-item:hover {
+  background-color: var(--yellow);
+  background-size: cover;
+  border: 4px solid var(--orange);
+}
+
+.bbq-duck-item:hover h2 {
+  color: var(--orange);
+  text-shadow: -2px 0 var(--yellow), 0 2px var(--yellow), 2px 0 var(--yellow),
+    0 -2px var(--yellow);
+}
+
+/* SUN WORLD */
 .sun-world-item {
   background-color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  font-size: clamp(1rem, 3rem, 5rem);
 }
 
+.sun-world-item h2 {
+  text-align: center;
+  padding: 1rem;
+}
+
+.sun-world-item:hover {
+  background-color: var(--blue);
+  color: var(--yellow);
+  font-size: clamp(2rem, 3.3rem, 5.3rem);
+}
+
+.sun-world-item:hover img {
+  transform: rotate(20deg);
+}
+
+/* sunrise hong kong */
 .sun-hk-item {
   background-color: var(--beige);
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.sun-hk-item img {
+  max-width: 30%;
+  height: auto;
+  transition: 1s;
+}
+
+.sun-hk-item h2 {
+  font-weight: 900;
+  font-size: clamp(2rem, 6.5rem, 7rem);
+}
+
+.hk-item-title {
+  font-weight: 900;
+  font-size: clamp(2rem, 5rem, 7rem);
+  color: var(--beige);
+  text-shadow: -4px 0 var(--orange), 0 4px var(--orange), 4px 0 var(--orange),
+    0 -4px var(--orange);
+}
+
+.sun-hk-item:hover {
+  background-color: var(--blue);
+}
+
+.sun-hk-item:hover img {
+  transform: rotate(180deg);
+  transition: 1s;
+}
+
+.sun-hk-item:hover h2,
+.hk-item-title:hover {
+  color: var(--yellow);
+}
+
+/* wood the stall */
 
 .woo-item {
   background-color: var(--orange);
+  overflow: hidden;
 }
 
 .woo-item h2 {
   color: var(--yellow);
+  font-size: clamp(2rem, 6rem, 8rem);
+}
+
+.woo-item div {
+  display: flex;
+  border: none;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.woo-item div img {
+  max-width: 20%;
+  height: auto;
+}
+
+.woo-item:hover {
+  background-color: var(--yellow);
+  border: 4px solid var(--blue);
+}
+
+.woo-item:hover div img {
+  transform: rotate(-40deg);
+}
+
+.woo-item:hover h2 {
+  color: var(--orange);
+  font-size: clamp(2.5rem, 6.5rem, 8.5rem);
 }
 
 /* .gold-bao-vote {
