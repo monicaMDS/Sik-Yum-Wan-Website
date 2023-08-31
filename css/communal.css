@@ -68,6 +68,16 @@ h4 {
 
 .arch {
   display: flex;
+  justify-content: center;
+  /* ß */
+}
+
+.arch:hover {
+  transform: scale(1.2);
+}
+
+.arch-landing-logo {
+  display: flex;
   width: 100vw;
   justify-content: center;
   position: absolute;
@@ -80,14 +90,82 @@ h4 {
   z-index: 3;
 }
 
+.landing-logo:hover {
+  transform: scale(1.2);
+}
+
 .landing-x-logo {
   max-width: 20%;
   height: auto;
 }
 
-.pop-nav {
-  display: none;
+/* SIDE NAV STYLING */
+
+.open-btn:hover {
+  transform: scale(2);
 }
+
+.close-btn:hover {
+  transform: scale(2);
+}
+
+.side-nav {
+  background-color: var(--blue);
+  height: 100vh;
+  width: 0vw;
+  position: fixed;
+  z-index: 6;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.side-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.side-nav div {
+  max-width: 60%;
+  height: auto;
+  padding: 3rem;
+  flex-wrap: nowrap;
+}
+
+.side-nav img {
+  max-width: 30%;
+  height: auto;
+  margin: 1rem;
+}
+
+.side-nav li {
+  max-width: 50%;
+  height: auto;
+}
+
+.side-nav li a {
+  font-size: clamp(1rem, 3rem, 5rem);
+}
+
+.close-btn {
+  color: var(--yellow);
+  position: absolute;
+  top: 1rem;
+  right: 3rem;
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+.close-btn:hover {
+  text-decoration: underline;
+}
+
+/* GENERAL TOP NAV STYLING */
 
 nav {
   display: flex;
@@ -98,6 +176,11 @@ nav {
   background-color: var(--orange);
   color: var(--yellow);
   padding: 2rem;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
 }
 
 nav ul a {
@@ -545,9 +628,10 @@ span {
   background-color: var(--yellow);
   font-size: clamp(2rem, 8rem, 9rem);
   background-image: url(../assets/images/yum-cha-select.png);
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-blend-mode: multiply;
+  background-repeat: no-repeat;
 }
 
 .db-item h2 {
@@ -709,7 +793,6 @@ span {
 
 .woo-item:hover h2 {
   color: var(--orange);
-  font-size: clamp(2.5rem, 6.5rem, 8.5rem);
 }
 
 /* .gold-bao-vote {

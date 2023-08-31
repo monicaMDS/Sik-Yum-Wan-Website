@@ -89,7 +89,7 @@
   text-align: center;
   line-height: 50px;
   background-color: transparent;
-  transition: all 1s ease-in-out;
+  /* transition: all 1s ease-in-out; */
 }
 
 /* lazy susan food images */
@@ -103,12 +103,10 @@
   background-image: url(../assets/images/mooncake-default.png);
   background-size: cover;
   background-position: center;
-  /* transition: all 400ms cubic-bezier(0.47, 1.64, 0.41, 0.8), transform 2s; */
 }
 
 .item-1:hover {
   background-image: url(../assets/images/mooncake-hover.png);
-  transform: rotate(180deg);
 }
 
 /* .item.active {
@@ -153,6 +151,7 @@ LANDING DESCRIPTION
   grid-template-rows: auto;
   color: var(--yellow);
   text-align: center;
+  align-items: center;
 }
 
 .landing-desc div {
@@ -239,4 +238,64 @@ LANDING DESCRIPTION
 .wan-desc:hover {
   background-image: url(../assets/images/wan-desc-hover.png);
   transition: all 400ms cubic-bezier(0.47, 1.64, 0.41, 0.8);
+}
+
+/* LOCAL STORIES */
+
+.local-story {
+}
+
+.local-story-title {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+/*
+.resultMarquee {
+  animation: scroll 10s linear 0s infinite;
+  transform: rotate(-3deg);
+  width: 100%;
+  color: var(--yellow);
+  font-size: clamp(2rem, 4rem, 6rem);
+  font-weight: 900;
+  text-shadow: -2px 0 var(--black), 0 2px var(--black), 2px 0 var(--black),
+    0 -2px var(--black);
+  padding: 2rem;
+} */
+
+/* .overflow-x-hidden {
+  width: 100%;
+  overflow: hidden;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-bottom: -100px;
+  margin-top: -100px;
+} */
+
+.ticket-wrapper {
+  transform: rotate(-3deg);
+  width: 100%;
+}
+
+.ticket {
+  background-image: url(../assets/images/ticket.png);
+  max-width: 200%;
+  height: 50px;
+  background-size: auto 100%;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: scroll;
+  animation-duration: 30s;
+}
+
+@keyframes scroll {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(-100%, 0);
+  }
 }
