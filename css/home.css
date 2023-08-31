@@ -1,15 +1,25 @@
 /* LANDING PAGE DECORATION */
+
+.landing-deco {
+}
+
 .landing-left {
+  padding-top: 2rem;
   position: absolute;
-  display: grid;
-  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+  left: 6rem;
   z-index: 1;
 }
 
 .landing-right {
+  padding-top: 2rem;
   position: absolute;
-  display: grid;
-  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+  right: 5rem;
   z-index: 1;
 }
 
@@ -76,7 +86,9 @@
 }
 
 .controls {
-  position: relative;
+  position: inherit;
+  bottom: 5rem;
+  right: 15rem;
   text-align: right;
   cursor: pointer;
 }
@@ -103,10 +115,22 @@
   background-image: url(../assets/images/mooncake-default.png);
   background-size: cover;
   background-position: center;
+  cursor: pointer;
 }
 
 .item-1:hover {
   background-image: url(../assets/images/mooncake-hover.png);
+}
+
+.item-2 {
+  background-image: url(../assets/images/dumplings-default.png);
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.item-2:hover {
+  background-image: url(../assets/images/dumplings-hover.png);
 }
 
 /* .item.active {
@@ -210,7 +234,22 @@ LANDING DESCRIPTION
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  transition: all 400ms cubic-bezier(0.47, 1.64, 0.41, 0.8);
+  cursor: pointer;
+}
+
+.desc-tab {
+  background-color: var(--orange);
+  height: 100vh;
+  width: 0vw;
+  position: fixed;
+  z-index: 6;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sik-desc {

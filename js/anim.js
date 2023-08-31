@@ -182,9 +182,6 @@ susanMooncake.addEventListener("mouseout", () => {
 
 susanMooncake.addEventListener("click", () => {});
 
-document.querySelector(".item-1").addEventListener("click", () => {
-  window.location.href = "./html-pages/mooncake.html";
-});
 
 /******************
  * EVENT PAGE HOVERS

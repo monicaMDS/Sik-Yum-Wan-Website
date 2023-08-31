@@ -1,94 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sik Yum Wan</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="../assets/logos/sik-favicon.png"
-    />
 
-    <!--css links-->
-    <link rel="stylesheet" href="../css/communal.css" />
-    <link rel="stylesheet" href="../css/home.css" />
-    <link rel="stylesheet" href="../css/transitions.css" />
-    <script
-      src="https://kit.fontawesome.com/02b16f4b0b.js"
-      crossorigin="anonymous"
-    ></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sik Yum Wan</title>
+  <link rel="icon" type="image/x-icon" href="../assets/logos/sik-favicon.png" />
 
-    <!--adobe font link-->
-    <link rel="stylesheet" href="https://use.typekit.net/czm7smv.css" />
+  <!--css links-->
+  <link rel="stylesheet" href="../css/communal.css" />
+  <link rel="stylesheet" href="../css/home.css" />
+  <link rel="stylesheet" href="../css/transitions.css" />
+  <script src="https://kit.fontawesome.com/02b16f4b0b.js" crossorigin="anonymous"></script>
 
-    <!--javascript links-->
-    <script src="./js/anim.js" defer></script>
-    <script src="./js/main.js" defer></script>
+  <!--adobe font link-->
+  <link rel="stylesheet" href="https://use.typekit.net/czm7smv.css" />
 
-    <!--GSAP animation links-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
-  </head>
+  <!--javascript links-->
+  <script src="./js/anim.js" defer></script>
+  <script src="./js/main.js" defer></script>
 
-  <body>
-    <!--ARCH LOGO-->
-    <a href="../index.html" class="arch-landing-logo">
-      <img
-        class="landing-logo bounce-ani"
-        src="../assets/logos/logo-arched.png"
-        alt="srched sik yum wan logo"
-      />
-    </a>
-    <!--NAVBAR-->
-    <nav>
-      <ul>
-        <a
-          href="javascript:void(0)"
-          class="open-btn bounce-ani"
-          onclick="openNav()"
-          ><i class="fa-solid fa-bars fa-2xl"></i
-        ></a>
-        <a href=""><i class="fa-solid fa-magnifying-glass fa-2xl"></i></a>
-      </ul>
-    </nav>
+  <!--GSAP animation links-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+</head>
 
-    <!--side nav-->
-    <section class="side-nav bounce-ani">
-      <a
-        href="javascript:void(0)"
-        class="close-btn bounce-ani"
-        onclick="closeNav()"
-        >&times;</a
-      >
-      <img
-        class="side-logo"
-        src="assets/logos/full-logo-x.png"
-        alt="sik yum wan x logo"
-      />
-      <div>
-        <img src="assets/logos/sik-logo.png" alt="sik logo" />
-        <img src="assets/logos/yum-logo.png" alt="yum logo" />
-        <img src="assets/logos/wan-logo.png" alt="wan logo" />
-      </div>
-      <li>
-        <a href="../index.html">home</a>
-        <a href="./html-pages/profile.html">profile</a>
-        <a href="./html-pages/event.html">events</a>
-        <a href="./html-pages/golden-bao.html">golden bao</a>
-      </li>
-    </section>
+<body>
+  <!--ARCH LOGO-->
+  <a href="../index.html" class="arch-landing-logo">
+    <img class="landing-logo bounce-ani" src="../assets/logos/logo-arched.png" alt="srched sik yum wan logo" />
+  </a>
+  <!--NAVBAR-->
+  <nav>
+    <ul>
+      <a href="javascript:void(0)" class="open-btn bounce-ani" onclick="openNav()"><i
+          class="fa-solid fa-bars fa-2xl"></i></a>
+      <a href=""><i class="fa-solid fa-magnifying-glass fa-2xl"></i></a>
+    </ul>
+  </nav>
 
-    <!--LAZY SUSAN-->
-    <section class="main-section">
-      <!--decoration around center-->
+  <!--side nav-->
+  <section class="side-nav bounce-ani">
+    <a href="javascript:void(0)" class="close-btn bounce-ani" onclick="closeNav()">&times;</a>
+    <img class="side-logo" src="assets/logos/full-logo-x.png" alt="sik yum wan x logo" />
+    <div>
+      <img src="assets/logos/sik-logo.png" alt="sik logo" />
+      <img src="assets/logos/yum-logo.png" alt="yum logo" />
+      <img src="assets/logos/wan-logo.png" alt="wan logo" />
+    </div>
+    <li>
+      <a href="../index.html">home</a>
+      <a href="./html-pages/profile.html">profile</a>
+      <a href="./html-pages/event.html">events</a>
+      <a href="./html-pages/golden-bao.html">golden bao</a>
+    </li>
+  </section>
+
+  <!--LAZY SUSAN-->
+  <section class="main-section">
+    <!--decoration around center-->
+    <div class="landing-deco">
       <div class="landing-left">
-        <img
-          src="assets/logos/landing-lantern-left.png"
-          alt="left - landing decorative lantern"
-        />
+        <img src="assets/logos/landing-lantern-left.png" alt="left - landing decorative lantern" />
         <img src="assets/logos/landing-yum.png" alt="landing yum logo" />
+      </div>
+
+      <div class="landing-right">
+        <img src="assets/logos/landing-lantern-right.png" alt="right - landing decorative lantern" />
+        <div class="to-footer bounce-ani"></div>
       </div>
 
       <div class="landing-center bounce-ani">
@@ -96,154 +76,154 @@
           <h2>golden bao voting</h2>
         </a>
       </div>
+    </div>
 
-      <div class="landing-right">
-        <img
-          src="assets/logos/landing-lantern-right.png"
-          alt="right - landing decorative lantern"
-        />
-
-        <div class="to-footer bounce-ani"></div>
-      </div>
-
-      <!--main blue recctangle-->
-      <div class="lazy-susan-section">
-        <div class="container">
-          <div class="wrapper">
-            <div class="item item-1 active bounce-ani"></div>
-            <div class="item item-2">
-              <a href="./html-pages/mooncake.html">
-                <img
-                  class="susan-mooncake"
-                  src="./assets/images/mooncake-default.png"
-                />
-              </a>
-            </div>
-            <div class="item item-3">
-              <img
-                class="susan-mooncake"
-                src="./assets/images/mooncake-default.png"
-              />
-            </div>
-            <div class="item item-4">
-              <img
-                class="susan-mooncake"
-                src="./assets/images/mooncake-default.png"
-              />
-            </div>
-            <div class="rotate-susan">
-              <svg viewBox="0 0 800 800">
-                <circle id="holder" class="st0" cx="400" cy="400" r="850" />
-              </svg>
-              <img
-                class="susan"
-                src="./assets/images/lazy-susan.png"
-                alt="lazy susan glass table"
-              />
-            </div>
+    <!--main blue rectangle-->
+    <div class="lazy-susan-section">
+      <div class="container">
+        <div class="wrapper">
+          <div class="item item-1 bounce-ani"></div>
+          <div class="item item-2 bounce-ani">
+          </div>
+          <div class="item item-3">
+          </div>
+          <div class="item item-4">
+          </div>
+          <div class="rotate-susan">
+            <svg viewBox="0 0 800 800">
+              <circle id="holder" class="st0" cx="400" cy="400" r="850" />
+            </svg>
+            <img class="susan" src="./assets/images/lazy-susan.png" alt="lazy susan glass table" />
           </div>
         </div>
-        <div class="controls">
-          <!-- <button id="prev">Prev</button> -->
-          <img id="next" src="assets/icons/arrow-default.png" />
-        </div>
       </div>
-    </section>
+      <div class="controls">
+        <!-- <button id="prev">Prev</button> -->
+        <img id="next" src="assets/icons/arrow-default.png" />
+      </div>
+    </div>
+  </section>
 
-    <!--BRIEF DESCRIPTION-->
-    <section class="landing-desc">
-      <img src="./assets/images/cafe-bbq-duck.png" alt="roast duck" />
+  <!--BRIEF DESCRIPTION-->
+  <section class="landing-desc">
+    <img src="./assets/images/cafe-bbq-duck.png" alt="roast duck" />
+    <div>
+      <h2>a series of eats, drinks and joy</h2>
+      <p>
+        Join us for an exciting series of Cantonese centered eats, drinks and
+        events!
+      </p>
+      <h6>FIND OUT MORE BELOW</h6>
+    </div>
+    <img src="./assets/images/baijiu.png" alt="bai jiu illustration" />
+  </section>
+
+  <!--about SYW -->
+  <section class="about-syw">
+    <div>
+      <div class="desc-logo sik-desc bounce-ani"></div>
+      <div class="desc-logo yum-desc bounce-ani"></div>
+      <div class="desc-logo wan-desc bounce-ani"></div>
+    </div>
+
+    <!--sik desc-->
+    <div class="sik-desc-tab desc-tab">
+      <a href="javascript:void(0)" class="desc-close-btn bounce-ani" onclick="closeDesc('sik-desc-tab')">&times;</a>
       <div>
-        <h2>a series of eats, drinks and joy</h2>
-        <p>
-          Join us for an exciting series of Cantonese centered eats, drinks and
-          events!
+        <img src="./assets/logos/sik-split.png" alt="sik split logo">
+        <p>“Sik” means eat in Cantonese. It is often used in the phrase “Sik Fan Lah”, meaning “It’s time for dinner!”
         </p>
-        <h6>FIND OUT MORE BELOW</h6>
-      </div>
-      <img src="./assets/images/baijiu.png" alt="bai jiu illustration" />
-    </section>
 
-    <!--about SYW -->
-    <section class="about-syw">
+        <p>Sik is a category of food events in Sik Yum Wan. You can identify the events through the bao logo. </p>
+      </div>
+      <img src="./assets/logos/sik-desc-img.png" alt="sik description image">
+    </div>
+
+    <!--yum desc-->
+    <div class="yum-desc-tab desc-tab">
+      <a href="javascript:void(0)" class="desc-close-btn bounce-ani" onclick="closeDesc('yum-desc-tab')">&times;</a>
       <div>
-        <div class="desc-logo sik-desc bounce-ani"></div>
-        <div class="desc-logo yum-desc bounce-ani"></div>
-        <div class="desc-logo wan-desc bounce-ani"></div>
+        <img src="./assets/logos/yum-split.png" alt="yum split logo">
+        <p>“Yum” means <b>drink</b> in Cantonese.</p>
       </div>
-    </section>
+      <div><img src="./assets/logos/yum-desc-img.png" alt="yum desc img"></div>
+      <div>
+        <p>Yum is a category of drink events in Sik Yum Wan. </p>
+        <p> You can identify the events through the teacup icon.</p>
+      </div>
+    </div>
 
-    <section class="local-story">
-      <!--       <h3 class="resultMarquee">
+    <!--wan desc-->
+    <div class="wan-desc-tab desc-tab">
+      <a href="javascript:void(0)" class="desc-close-btn bounce-ani" onclick="closeDesc('.wan-desc-tab')">&times;</a>
+    </div>
+  </section>
+
+  <section class="local-story">
+    <!--       <h3 class="resultMarquee">
         SIK YUM WAN! SIK YUM WAN! SIK YUM WAN! SIK YUM WAN!
       </h3> -->
-      <div class="overflow-x-hidden">
-        <div class="ticket-wrapper">
-          <div class="ticket"></div>
-        </div>
+    <div class="overflow-x-hidden">
+      <div class="ticket-wrapper">
+        <div class="ticket"></div>
       </div>
-      <img
-        class="local-story-title"
-        src="assets/images/local-stories-title.png"
-        alt="local stories of auckland"
-      />
-    </section>
+    </div>
+    <img class="local-story-title" src="assets/images/local-stories-title.png" alt="local stories of auckland" />
+  </section>
 
-    <!--LOCAL STORIES-->
-    <section class="store-grid">
-      <!--dragon boat-->
-      <div class="db-item bounce-ani">
-        <h2 class="item-title bounce-ani">dragon<br />boat</h2>
+  <!--LOCAL STORIES-->
+  <section class="store-grid">
+    <!--dragon boat-->
+    <div class="db-item bounce-ani">
+      <h2 class="item-title bounce-ani">dragon<br />boat</h2>
+    </div>
+
+    <!--cafe bbq duck-->
+    <div class="bbq-duck-item bg-img bounce-ani">
+      <h2 class="item-title">cafe bbq</h2>
+
+      <!-- <img src="../assets/images/cafe-bbq-duck.png" alt="cafe bbq duck" /> -->
+    </div>
+
+    <!--sun world chinese-->
+    <div class="sun-world-item bounce-ani">
+      <img src="../assets/images/dumpling-photo.png" alt="dumpling photo" />
+      <h2 class="item-title">
+        sun<br />
+        world <br />chinese
+      </h2>
+    </div>
+
+    <!--sunrise hong kong cafe-->
+    <div class="sun-hk-item">
+      <h2>sun<br />rise</h2>
+      <img src="../assets/images/dumplings-drawn.png" alt="drawn dumplings" />
+      <h2 class="hk-item-title">hong <br />kong</h2>
+    </div>
+
+    <!--woos-the stall-->
+    <div class="woo-item bounce-ani">
+      <h2 class="item-title">Woos - the stall</h2>
+      <div class="bounce-ani">
+        <img src="../assets/images/rice.png" alt="rice in bowl" />
+        <img src="../assets/images/rice.png" alt="rice in bowl" />
+        <img src="../assets/images/rice.png" alt="rice in bowl" />
       </div>
+    </div>
+  </section>
 
-      <!--cafe bbq duck-->
-      <div class="bbq-duck-item bg-img bounce-ani">
-        <h2 class="item-title">cafe bbq</h2>
+  <footer>
+    <img src="../assets/logos/footer-chinese-logo.png" alt="chinese sik yum wan" />
+    <img src="../assets/logos/full-logo-x.png" />
+    <li>
+      <a href="../index.html">home</a>
+      <a href="./html-pages/profile.html">profile</a>
+      <a href="./html-pages/event.html">events</a>
+      <a href="./html-pages/golden-bao.html">golden bao</a>
+    </li>
 
-        <!-- <img src="../assets/images/cafe-bbq-duck.png" alt="cafe bbq duck" /> -->
-      </div>
+    <div class="to-top bounce-ani"></div>
+  </footer>
+</body>
 
-      <!--sun world chinese-->
-      <div class="sun-world-item bounce-ani">
-        <img src="../assets/images/dumpling-photo.png" alt="dumpling photo" />
-        <h2 class="item-title">
-          sun<br />
-          world <br />chinese
-        </h2>
-      </div>
-
-      <!--sunrise hong kong cafe-->
-      <div class="sun-hk-item">
-        <h2>sun<br />rise</h2>
-        <img src="../assets/images/dumplings-drawn.png" alt="drawn dumplings" />
-        <h2 class="hk-item-title">hong <br />kong</h2>
-      </div>
-
-      <!--woos-the stall-->
-      <div class="woo-item bounce-ani">
-        <h2 class="item-title">Woos - the stall</h2>
-        <div class="bounce-ani">
-          <img src="../assets/images/rice.png" alt="rice in bowl" />
-          <img src="../assets/images/rice.png" alt="rice in bowl" />
-          <img src="../assets/images/rice.png" alt="rice in bowl" />
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <img
-        src="../assets/logos/footer-chinese-logo.png"
-        alt="chinese sik yum wan"
-      />
-      <img src="../assets/logos/full-logo-x.png" />
-      <li>
-        <a href="../index.html">home</a>
-        <a href="./html-pages/profile.html">profile</a>
-        <a href="./html-pages/event.html">events</a>
-        <a href="./html-pages/golden-bao.html">golden bao</a>
-      </li>
-
-      <div class="to-top bounce-ani"></div>
-    </footer>
-  </body>
 </html>

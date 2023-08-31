@@ -18,12 +18,16 @@
   --black: black;
 }
 
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: var(--orange);
-  background-image: url(../assets/images/paper-overlay.png);
-  background-blend-mode: overlay;
 }
 
 section {
