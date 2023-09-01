@@ -78,6 +78,7 @@ toBtm.addEventListener("click", () => {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 });
 
+//to top function
 let toTop = document.querySelector(".to-top");
 toTop.addEventListener("click", () => {
   document.body.scrollTop = 0; // For Safari
