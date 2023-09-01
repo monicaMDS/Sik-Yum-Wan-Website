@@ -44,13 +44,16 @@
     <!--NAVBAR-->
     <nav>
       <ul>
+        <i
+          class="fa-solid fa-magnifying-glass fa-2xl"
+          onclick="openSearch()"
+        ></i>
         <a
           href="javascript:void(0)"
           class="open-btn bounce-ani"
           onclick="openNav()"
           ><i class="fa-solid fa-bars fa-2xl"></i
         ></a>
-        <a href=""><i class="fa-solid fa-magnifying-glass fa-2xl"></i></a>
       </ul>
     </nav>
 
@@ -165,24 +168,29 @@
       </div>
 
       <!--sik desc-->
-      <div class="sik-desc-tab desc-tab">
-        <a
-          href="javascript:void(0)"
+      <div class="sik-desc-tab desc-tab bounce-ani">
+        <p
           class="desc-close-btn bounce-ani"
           onclick="closeDesc('.sik-desc-tab')"
-          >&times;</a
         >
+          &times;
+        </p>
+
         <div>
-          <img src="./assets/logos/sik-split.png" alt="sik split logo" />
+          <img
+            class="desc-title"
+            src="./assets/logos/sik-split.png"
+            alt="sik split logo"
+          />
           <br />
           <p>
-            “Sik” means <b>eat</b> in Cantonese. It is often used in the phrase
-            “Sik Fan Lah”, meaning “It’s time for dinner!”
+            “Sik” means <span>eat</span> in Cantonese. It is often used in the
+            phrase “Sik Fan Lah”, meaning “It’s time for dinner!”
           </p>
           <br />
           <p>
             Sik is a category of food events in Sik Yum Wan. You can identify
-            the events through the bao logo.
+            the events through the <span>bao logo.</span>
           </p>
         </div>
         <img
@@ -193,52 +201,70 @@
       </div>
 
       <!--yum desc-->
-      <div class="yum-desc-tab desc-tab">
-        <a
-          href="javascript:void(0)"
+      <div class="yum-desc-tab desc-tab bounce-ani">
+        <p
           class="desc-close-btn bounce-ani"
           onclick="closeDesc('.yum-desc-tab')"
-          >&times;</a
         >
-        <div>
+          &times;
+        </p>
+        <div class="y-d-1">
           <img src="./assets/logos/yum-split.png" alt="yum split logo" />
-          <p>“Yum” means <b>drink</b> in Cantonese.</p>
+          <p>“Yum” means <span>drink</span> in Cantonese.</p>
         </div>
         <div>
-          <img src="./assets/logos/yum-desc-img.png" alt="yum desc img" />
+          <img
+            class="yum-desc-img"
+            src="./assets/logos/yum-desc-img.png"
+            alt="yum desc img"
+          />
+          <svg viewBox="0 0 116.93 851.39">
+            <path
+              id="wave-path"
+              class="cls-1"
+              d="M64.05,.2S17.8,109.11,21.65,152.16c2.11,23.62,32.86,83.31,42.4,105.03,12.26,27.92,49.67,79.91,52.06,110.31,3.64,46.3-24.54,109.13-41.61,152.32C61.58,552.53-.57,636.2,.51,671.35c.97,31.38,53.03,78.74,63.54,108.33,6,16.88,0,71.65,0,71.65"
+            />
+          </svg>
         </div>
-        <div>
+        <div class="y-d-">
           <p>Yum is a category of drink events in Sik Yum Wan.</p>
-          <p>You can identify the events through the teacup icon.</p>
+          <br />
+          <p>
+            You can identify the events through the <span>teacup icon.</span>
+          </p>
         </div>
       </div>
 
       <!--wan desc-->
-      <div class="wan-desc-tab desc-tab">
-        <a
-          href="javascript:void(0)"
+      <div class="wan-desc-tab desc-tab bounce-ani">
+        <p
           class="desc-close-btn bounce-ani"
           onclick="closeDesc('.wan-desc-tab')"
-          >&times;</a
         >
-        <div class="w-d-1">
+          &times;
+        </p>
+
+        <img
+          class="wan-desc-img"
+          src="assets/logos/wan-desc-img.png"
+          alt="wan description image"
+        />
+        <div>
           <img src="assets/logos/wan-split.png" alt="wan split image" />
-          <p>“Wan” means <b>play</b> in Cantonese.</p>
-        </div>
-        <img src="assets/logos/wan-desc-img.png" alt="wan description image" />
-        <div class="w-d-2">
+          <p>“Wan” means <span>play</span> in Cantonese.</p>
           <p>
             Wan is a category of game and entertainment events in Sik Yum Wan.
           </p>
-          <p>You can identify the events through the mahjong tile icon.</p>
+          <br />
+          <p>
+            You can identify the events through the
+            <span>mahjong tile icon.</span>
+          </p>
         </div>
       </div>
     </section>
 
     <section class="local-story">
-      <h3 class="resultMarquee">
-        SIK YUM WAN! SIK YUM WAN! SIK YUM WAN! SIK YUM WAN!
-      </h3>
       <div class="overflow-x-hidden">
         <div class="ticket-wrapper">
           <div class="ticket"></div>

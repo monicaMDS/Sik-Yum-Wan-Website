@@ -160,6 +160,94 @@ function moveWheel(amount, i, index) {
  * LANDING PAGE HOVERS
  * ******************/
 
+//SIK DESCRIPTION BIG IMAGE
+let bigDescImg = document.querySelector(".big-desc-img");
+
+//pulse animation
+gsap.to(bigDescImg, {
+  scale: 1.05,
+  duration: 2,
+  stagger: {
+    each: 1,
+    repeat: -1,
+    yoyo: true,
+  },
+});
+
+//hover animation
+bigDescImg.addEventListener("mouseover", () => {
+  gsap.to(bigDescImg, {
+    rotation: -10,
+    yoyo: true,
+  });
+});
+
+bigDescImg.addEventListener("mouseout", () => {
+  gsap.to(bigDescImg, {
+    rotation: 10,
+    yoyo: true,
+  });
+});
+
+//YUM DESCRIPTION BIG IMAGE
+
+let yumDescImg = document.querySelector(".yum-desc-img");
+
+//WAVE ANIMATION
+
+function waveAni() {
+  gsap.to(yumDescImg, {
+    motionPath: {
+      path: "#wave-path",
+      align: "#wave-path",
+      alignOrigin: [0.5, 0.5],
+      autoRotate: false,
+    },
+    duration: 5,
+    yoyo: true,
+
+    stagger: {
+      each: 1,
+      repeat: -1,
+      yoyo: true,
+    },
+  });
+}
+
+//WAN DESCRIPTION BIG IMAGE
+
+let wanDescImg = document.querySelector(".wan-desc-img");
+
+//jiggle animation
+gsap.to(wanDescImg, {
+  repeatDelay: 2,
+  ease: "bounce.out",
+  duration: 0.2,
+  rotation: -10,
+  repeat: -1,
+  yoyo: true,
+});
+
+//hover animation
+wanDescImg.addEventListener("mouseover", () => {
+  gsap.to(wanDescImg, {
+    duration: 2,
+    ease: "back.out(1.7)",
+    scaleX: 1.5,
+    stagger: {
+      scaleY: 1.7,
+    },
+  });
+});
+
+wanDescImg.addEventListener("mouseout", () => {
+  gsap.to(wanDescImg, {
+    duration: 2,
+    ease: "back.out(1.7)",
+    scaleX: -1.5,
+    scaleY: -1.7,
+  });
+});
 /******************
  * EVENT PAGE HOVERS
  * ******************/

@@ -107,7 +107,8 @@
 .wrapper {
   position: relative;
   z-index: 2;
-  translate: 0rem -19rem;
+  /* LAZY SUSAN INNER CIRCLE POSITION */
+  translate: 3rem -17rem;
 }
 
 .controls {
@@ -312,6 +313,7 @@ LANDING DESCRIPTION
   right: 3rem;
   font-size: 3rem;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .desc-close-btn:hover {
@@ -329,13 +331,10 @@ LANDING DESCRIPTION
 }
 
 .sik-desc-tab {
-  display: flex;
   align-items: center;
-  justify-content: center;
 }
 
-.sik-desc-tab div,
-img {
+.sik-desc-tab div {
   max-width: 50vw;
   height: auto;
   flex-direction: column;
@@ -347,8 +346,8 @@ img {
   height: auto;
 }
 
-.big-desc-img {
-  align-self: flex-start;
+span {
+  font-weight: 700;
 }
 
 .yum-desc {
@@ -360,6 +359,39 @@ img {
   transition: all 400ms cubic-bezier(0.47, 1.64, 0.41, 0.8);
 }
 
+.yum-desc-tab {
+  display: flex;
+  background-color: var(--blue);
+  align-items: center;
+}
+
+.yum-desc-tab div {
+  max-width: 30%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.y-d-1 {
+  align-self: flex-start;
+}
+
+.y-d-2 {
+  align-items: flex-end;
+}
+
+/* wave-animation svg */
+.cls-1 {
+  fill: none;
+  stroke: transparent;
+  stroke-width: 10px;
+  height: 100vh;
+  width: auto;
+}
+
+.yum-desc-img {
+  max-width: 100%;
+}
+
 .wan-desc {
   background-image: url(../assets/images/wan-desc-default.png);
 }
@@ -369,26 +401,24 @@ img {
   transition: all 400ms cubic-bezier(0.47, 1.64, 0.41, 0.8);
 }
 
-.wan-desc-tab {
-  margin: 1rem;
-}
-
 .wan-desc-tab div {
   flex-direction: column;
   justify-content: center;
+  max-width: 25%;
 }
 
-.w-d-1 {
-  align-self: flex-start;
+.wan-desc-tab div p {
+  margin-top: 1rem;
 }
 
-.w-d-2 {
-  align-self: flex-end;
+.wan-desc-img {
+  max-width: 30%;
 }
 
 /* LOCAL STORIES */
 
-.local-story {
+.local-story img {
+  margin-bottom: 1rem;
 }
 
 .local-story-title {
@@ -433,7 +463,7 @@ img {
 .ticket {
   max-width: 100%;
   height: 50px;
-  margin: 10rem;
+  margin: 2rem;
 }
 
 @keyframes scroll {

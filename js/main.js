@@ -9,31 +9,51 @@ descClose.addEventListener("click", ()=>{
   document.querySelector();
 }); */
 
+//open search
+function openSearch() {
+  console.log("open search open");
+}
+
 //close desc general function
-function closeDesc(name) {
-  console.log("Hello wowrld");
-  document.querySelector(name).style.width = "0vw";
+function closeDesc(tab) {
+  console.log("closed desc");
+  document.querySelector(tab).style.width = "0vw";
+  document.querySelector(tab).style.padding = "0rem";
 }
 
 //open sikDesc
 let sikDesc = document.querySelector(".sik-desc");
 sikDesc.addEventListener("click", () => {
-  document.querySelector(".sik-desc-tab").style.width = "100vw";
+  let sikDescTab = document.querySelector(".sik-desc-tab");
+  openDesc(sikDescTab);
 });
 
 //open yumDesc
 let yumDesc = document.querySelector(".yum-desc");
 yumDesc.addEventListener("click", () => {
-  document.querySelector(".yum-desc-tab").style.width = "100vw";
+  let yumDescTab = document.querySelector(".yum-desc-tab");
+  openDesc(yumDescTab);
+  waveAni();
 });
 
 //open wanDesc
 let wanDesc = document.querySelector(".wan-desc");
 wanDesc.addEventListener("click", () => {
-  document.querySelector(".wan-desc-tab").style.width = "100vw";
+  let wanDescTab = document.querySelector(".wan-desc-tab");
+  openDesc(wanDescTab);
 });
 
-// NAVIGATION OPEN AND CLOSE
+function openDesc(img) {
+  img.style.width = "100vw";
+  img.style.padding = "3rem";
+}
+
+/* 
+
+NAVIGATION OPEN AND CLOSE 
+
+*/
+
 let openNav = document.querySelector(".open-btn");
 //console.log(openNav);
 
@@ -48,11 +68,6 @@ closeNav.addEventListener("click", () => {
   console.log("side nav clicked");
   document.querySelector(".side-nav").style.width = "00vw";
 });
-
-/* function openNav() {
-  console.log("side nav clickeed");
-  document.querySelector(".side-nav").style.width = "100vw";
-} */
 
 /* SCROLL FUNCTIONS */
 
