@@ -18,16 +18,23 @@
   --black: black;
 }
 
-html {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-
 body {
   margin: 0;
   padding: 0;
   background-color: var(--orange);
+  position: relative;
+}
+
+.paper-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(../assets/images/printed_paper_texture_overlay.png);
+  mix-blend-mode: multiply;
+  background-repeat: repeat;
+  pointer-events: none;
 }
 
 section {
@@ -166,6 +173,7 @@ h4 {
 }
 
 .close-btn:hover {
+  transform: scale(1.2);
   text-decoration: underline;
 }
 
@@ -179,7 +187,8 @@ nav {
   width: auto;
   background-color: var(--orange);
   color: var(--yellow);
-  padding: 2rem;
+  padding: 1.3rem;
+  justify-content: flex-end;
 }
 
 nav ul {

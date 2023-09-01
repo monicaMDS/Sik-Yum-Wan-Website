@@ -10,8 +10,9 @@ descClose.addEventListener("click", ()=>{
 }); */
 
 //close desc general function
-function closeDesc(tab) {
-  document.querySelector(tab).style.width = "0vw";
+function closeDesc(name) {
+  console.log("Hello wowrld");
+  document.querySelector(name).style.width = "0vw";
 }
 
 //open sikDesc

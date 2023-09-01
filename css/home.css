@@ -8,8 +8,9 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  gap: 7rem;
-  left: 6rem;
+  align-items: center;
+  gap: 5rem;
+  left: 9rem;
   z-index: 1;
 }
 
@@ -18,15 +19,17 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  gap: 7rem;
-  right: 5rem;
+  align-items: center;
+  gap: 5rem;
+  right: 9rem;
   z-index: 1;
+  translate: 1rem 1rem;
 }
 
 .landing-center {
   position: relative;
   z-index: 3;
-  top: 90vh;
+  top: 85vh;
   margin: auto;
   max-width: 40%;
   background-color: var(--orange);
@@ -70,9 +73,29 @@
   background-color: var(--blue);
   border-radius: 80px;
   max-width: 80%;
-  height: auto;
+  height: 80vh;
   border: 2px solid var(--black);
   overflow: hidden;
+  background-image: url(../assets/images/dashed-lines.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  transform: rotate(-360deg);
+}
+
+.lazy-susan-section::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: url(../assets/images/dashed-lines.png) no-repeat cover center;
+  transform: rotate(360deg);
+  transition: all 1s ease-in-out;
+
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
 }
 
 .container {
@@ -83,25 +106,25 @@
 
 .wrapper {
   position: relative;
+  z-index: 2;
+  translate: 0rem -17rem;
 }
 
 .controls {
   position: inherit;
-  bottom: 5rem;
-  right: 15rem;
+  bottom: 20rem;
+  right: 17rem;
   text-align: right;
   cursor: pointer;
 }
 
 .item {
   position: inherit;
-  z-index: 1;
-  width: 180px;
-  height: 180px;
+  z-index: 3;
+  width: 230px;
+  height: 230px;
   text-align: center;
   line-height: 50px;
-  background-color: transparent;
-  /* transition: all 1s ease-in-out; */
 }
 
 /* lazy susan food images */
@@ -133,6 +156,28 @@
   background-image: url(../assets/images/dumplings-hover.png);
 }
 
+.item-3 {
+  background-image: url(../assets/event-images/bao-default.png);
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.item-3:hover {
+  background-image: url(../assets/event-images/bao-hover.png);
+}
+
+.item-4 {
+  background-image: url(../assets/event-images/baijiu-default.png);
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.item-4:hover {
+  background-image: url(../assets/event-images/baijiu-hover.png);
+}
+
 /* .item.active {
     background-color: blue;
   } */
@@ -142,14 +187,16 @@
   position: absolute;
   max-width: 200%;
   height: auto;
-  top: 50%;
+  top: 0%;
   left: 50%;
   transform: translate(-50%, -50%);
+  overflow: hidden;
 }
 
 svg {
   position: absolute;
   transform: translate(-50%, -50%);
+  /* KEEP 50, OTHER WISE ANIMATION IS OFF CENTER */
   top: 50%;
   left: 50%;
   height: 300px;
@@ -188,10 +235,14 @@ LANDING DESCRIPTION
   justify-self: center;
 }
 
+.landing-desc img:hover {
+  transform: rotate(20deg);
+}
+
 .landing-desc h2 {
   color: var(--orange);
-  text-shadow: -2px 0 var(--yellow), 0 2px var(--yellow), 2px 0 var(--yellow),
-    0 -2px var(--yellow);
+  text-shadow: -4px 0 var(--yellow), 0 4px var(--yellow), 4px 0 var(--yellow),
+    0 -4px var(--yellow);
   text-align: center;
   font-size: clamp(5rem, 7rem, 14rem);
 }
@@ -250,6 +301,22 @@ LANDING DESCRIPTION
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--yellow);
+  font-size: clamp(1rem, 2rem, 3rem);
+}
+
+.desc-close-btn {
+  color: var(--yellow);
+  position: absolute;
+  top: 1rem;
+  right: 3rem;
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+.desc-close-btn:hover {
+  transform: scale(1.2);
+  text-decoration: underline;
 }
 
 .sik-desc {
@@ -259,6 +326,29 @@ LANDING DESCRIPTION
 .sik-desc:hover {
   background-image: url(../assets/images/sik-desc-hover.png);
   transition: all 400ms cubic-bezier(0.47, 1.64, 0.41, 0.8);
+}
+
+.sik-desc-tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sik-desc-tab div,
+img {
+  max-width: 50vw;
+  height: auto;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.sik-desc-tab img {
+  max-width: 50%;
+  height: auto;
+}
+
+.big-desc-img {
+  align-self: flex-start;
 }
 
 .yum-desc {
@@ -277,6 +367,23 @@ LANDING DESCRIPTION
 .wan-desc:hover {
   background-image: url(../assets/images/wan-desc-hover.png);
   transition: all 400ms cubic-bezier(0.47, 1.64, 0.41, 0.8);
+}
+
+.wan-desc-tab {
+  margin: 1rem;
+}
+
+.wan-desc-tab div {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.w-d-1 {
+  align-self: flex-start;
+}
+
+.w-d-2 {
+  align-self: flex-end;
 }
 
 /* LOCAL STORIES */
@@ -304,37 +411,37 @@ LANDING DESCRIPTION
   padding: 2rem;
 } */
 
-/* .overflow-x-hidden {
+.overflow-x-hidden {
   width: 100%;
   overflow: hidden;
   padding-top: 100px;
   padding-bottom: 100px;
   margin-bottom: -100px;
   margin-top: -100px;
-} */
+  animation: scroll 10s linear infinite;
+  animation-duration: 12s;
+}
 
 .ticket-wrapper {
   transform: rotate(-3deg);
-  width: 100%;
+  width: 300vw;
+  height: auto;
+  background-image: url(../assets/images/ticket.png);
+  background-size: auto 100%;
 }
 
 .ticket {
-  background-image: url(../assets/images/ticket.png);
-  max-width: 200%;
+  max-width: 100%;
   height: 50px;
-  background-size: auto 100%;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-name: scroll;
-  animation-duration: 30s;
+  margin: 10rem;
 }
 
 @keyframes scroll {
   from {
-    transform: translate(0, 0);
+    transform: translate(0%, 0);
   }
 
   to {
-    transform: translate(-100%, 0);
+    transform: translate(-100vw, 0);
   }
 }

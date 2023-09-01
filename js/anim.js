@@ -2,6 +2,10 @@
  * LAZY SUSAN
  ******/
 
+/* gsap.to(".lazy-susan-section ".backgroundImage, {
+  rotation: 360,
+}); */
+
 /***
  * SPIN FUNCTION
  ***/
@@ -157,10 +161,9 @@ function moveWheel(amount, i, index) {
  * ******************/
 
 //mooncake hover
-const susanMooncake = document.querySelector(".susan-mooncake");
+/* const susanMooncake = document.querySelector(".susan-mooncake");
 susanMooncake.addEventListener("mouseover", () => {
   console.log("mooncake event mouseover");
-  /* susanMooncake.setAttribute("src", "../assets/images/mooncake-hover.png"); */
 
   gsap.to({
     duration: 0.3,
@@ -171,7 +174,6 @@ susanMooncake.addEventListener("mouseover", () => {
 
 susanMooncake.addEventListener("mouseout", () => {
   console.log("mooncake event mouseout");
-  /* susanMooncake.setAttribute("src", "../assets/images/mooncake-default.png"); */
 
   gsap.to({
     duration: 0.3,
@@ -180,8 +182,7 @@ susanMooncake.addEventListener("mouseout", () => {
   });
 });
 
-susanMooncake.addEventListener("click", () => {});
-
+susanMooncake.addEventListener("click", () => {}); */
 
 /******************
  * EVENT PAGE HOVERS
