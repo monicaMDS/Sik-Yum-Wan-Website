@@ -160,30 +160,6 @@ function moveWheel(amount, i, index) {
  * LANDING PAGE HOVERS
  * ******************/
 
-//mooncake hover
-/* const susanMooncake = document.querySelector(".susan-mooncake");
-susanMooncake.addEventListener("mouseover", () => {
-  console.log("mooncake event mouseover");
-
-  gsap.to({
-    duration: 0.3,
-    ease: "bounce.out",
-    rotate: 150,
-  });
-});
-
-susanMooncake.addEventListener("mouseout", () => {
-  console.log("mooncake event mouseout");
-
-  gsap.to({
-    duration: 0.3,
-    ease: "bounce.out",
-    rotate: -15,
-  });
-});
-
-susanMooncake.addEventListener("click", () => {}); */
-
 /******************
  * EVENT PAGE HOVERS
  * ******************/
