@@ -42,6 +42,10 @@ section {
   width: 100vw;
 }
 
+.store-link {
+  text-decoration: none;
+}
+
 /* bounce animation class */
 .bounce-ani {
   transition: all 400ms cubic-bezier(0.47, 1.64, 0.41, 0.8);
@@ -118,6 +122,7 @@ h4 {
 
 .close-btn:hover {
   transform: scale(2);
+  cursor: pointer;
 }
 
 .side-nav {
@@ -177,6 +182,30 @@ h4 {
   text-decoration: underline;
 }
 
+/* SEARCH OPTION */
+
+.search-bar {
+  display: none;
+  width: 15rem;
+  height: 3rem;
+  margin: 1rem;
+  border: 3px solid var(--yellow);
+  background-color: var(--orange);
+  color: var(--yellow);
+  padding: 1rem;
+}
+
+.search-bar::placeholder {
+  color: var(--yellow);
+  opacity: 1;
+  padding: 1rem;
+}
+
+.fa-magnifying-glass:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
 /* GENERAL TOP NAV STYLING */
 
 nav {
@@ -194,6 +223,7 @@ nav {
 nav ul {
   display: flex;
   align-items: center;
+  gap: 1.5rem;
 }
 
 nav ul a {
@@ -353,14 +383,14 @@ EVENT PAGE STYLING
   text-align: center;
   border-radius: 80px;
   max-width: 80%;
-  height: 80%;
+  height: 75%;
   border: 2px solid var(--black);
-  padding: 8rem;
+  padding: 5rem;
   text-transform: uppercase;
 }
 
 .event-page-img h1 {
-  font-size: clamp(10px, 11rem, 12rem);
+  font-size: clamp(9px, 10rem, 11rem);
   /* font-weight: 700; */
   text-shadow: -2px 0 var(--black), 0 2px var(--black), 2px 0 var(--black),
     0 -2px var(--black);
@@ -381,9 +411,9 @@ EVENT PAGE STYLING
   transform: scale(1, 1);
 }
 
-/* .event-nav-img:hover {
+.event-nav-img:hover {
   transform: scale(1, 1);
-} */
+}
 
 .mooncake-view-event {
   color: var(--yellow);
@@ -391,7 +421,7 @@ EVENT PAGE STYLING
   border: 10px solid var(--yellow);
   border-radius: 20px;
   text-transform: uppercase;
-  padding: 1rem;
+  padding: 0.8rem;
 
   font-size: clamp(20px, 2rem, 5rem);
   font-weight: 600;
@@ -492,21 +522,6 @@ GOLDEN BAO STYLING
 
 */
 
-/* .gold-bao-land {
-  display: grid;
-  grid-template-columns: 10vw 40vw 40vw 10vw;
-  grid-template-rows: 40vh 40vh 20vh;
-  grid-template-areas: "title title title title";
-  text-align: center;
-  justify-content: center;
-}
-
-.gold-bao-land h1 {
-  grid-area: title;
-  font-weight: 900;
-  font-size: 300px;
-} */
-
 /* Gold bao landing section */
 
 .gold-bao-land {
@@ -524,7 +539,7 @@ GOLDEN BAO STYLING
 .gold-bao-land h3 {
   color: var(--yellow);
   font-weight: 600;
-  font-size: clamp(1rem, 3rem, 4rem);
+  font-size: clamp(1rem, 2rem, 3rem);
 }
 
 .gold-bao {
@@ -618,7 +633,7 @@ select:hover {
 }
 
 .vote-item h2 {
-  font-size: clamp(2rem, 4rem, 5rem);
+  font-size: clamp(2rem, 3rem, 4rem);
   font-weight: 900;
 }
 
@@ -683,6 +698,7 @@ span {
   font-size: clamp(3rem, 10rem, 13rem);
   color: var(--yellow);
   z-index: 0;
+  text-decoration: none;
 }
 
 .bbq-duck-item img {
@@ -690,6 +706,10 @@ span {
   /* position: absolute; */
   z-index: 1;
   width: auto;
+}
+
+.bbq-duck-item a {
+  text-decoration: none;
 }
 
 .bbq-duck-item:hover {
@@ -812,4 +832,209 @@ span {
   display: grid;
 } */
 
-/* LOCAL STORIES */
+/* EATERY  */
+
+.title-name {
+  text-align: center;
+  font-size: clamp(2rem, 5rem, 7rem);
+}
+
+.store-img {
+  display: block;
+  margin: auto;
+  max-height: 70vh;
+  width: auto;
+}
+
+.store-name {
+}
+
+.store-details {
+  color: var(--beige);
+  text-align: center;
+  font-size: clamp(1rem, 2rem, 3rem);
+}
+
+.store-ph-div {
+  background-color: var(--yellow);
+  color: var(--orange);
+  text-align: center;
+  height: 10%;
+}
+
+.store-ph-c {
+  margin-top: 50%;
+  padding: 1rem;
+  font-size: clamp(1rem, 2rem, 3rem);
+
+  display: block;
+  margin: auto;
+  background-color: var(--orange);
+  width: 30%;
+  height: auto;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.store-content {
+  display: grid;
+  grid-template-columns: 80vw auto;
+  grid-template-rows: 100%;
+  height: 100%;
+  background-color: var(--beige);
+  color: var(--orange);
+  text-align: left;
+}
+
+.store-text-content {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+  max-width: 50%;
+}
+
+.store-content p {
+  font-weight: 700;
+}
+
+.store-desc-title {
+  color: var(--orange);
+  font-size: clamp(2rem, 4rem, 6rem);
+}
+
+.store-desc-img-div {
+  background-color: var(--yellow);
+  max-height: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.store-desc-img {
+  height: auto;
+  width: 60%;
+}
+
+/* EVENT SPECIFIC PAGE STYLING */
+
+.event-header {
+  background-image: url(../assets/images/dashed-lines.png);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+}
+
+.event-detail-section {
+  background-color: var(--beige);
+  color: var(--orange);
+  text-align: center;
+}
+
+.event-details {
+  color: var(--orange);
+}
+
+.event-logo-div {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  position: absolute;
+  top: 40vh;
+  right: 20vw;
+}
+
+.event-logo {
+  max-width: 5vw;
+  height: auto;
+}
+
+.event-details {
+  text-align: center;
+  color: var(--orange);
+}
+
+.event-details h1 {
+  text-align: center;
+  font-size: 96px;
+  font-weight: 900;
+  color: var(--orange);
+}
+
+.event-details h3 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.event-detail-cat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.event-detail-cat h4 {
+  color: var(--orange);
+}
+
+.event-svg {
+  width: 80px;
+  height: 100px;
+  position: relative;
+  transform: none;
+  top: 0%;
+  left: 0%;
+}
+
+.event-header h3 {
+  position: absolute;
+  left: 20vw;
+  top: 40vh;
+  color: var(--beige);
+  font-weight: 900;
+  font-size: 48px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.event-header-img {
+  display: block;
+  margin: auto;
+}
+
+.event-content p {
+  font-weight: 500;
+  font-size: 36px;
+}
+
+hr {
+  color: var(--orange);
+}
+
+.event-cat {
+  display: flex;
+  gap: 2rem;
+}
+
+.event-cat h6 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.fav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--orange);
+  border-radius: 60px;
+  width: 681px;
+  height: 105px;
+  padding: 1rem;
+  color: var(--orange);
+}
+
+.fav-btn h4 {
+  font-size: 40px;
+  color: var(--orange);
+}

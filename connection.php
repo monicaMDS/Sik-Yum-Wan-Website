@@ -1,4 +1,10 @@
 <?php
+
+  // Turn on error reporting
+  ini_set('display_errors', 1);
+  ini_set('display_startup_errors', 1);
+  error_reporting(E_ALL); 
+
   $db_host = 'localhost';
   $db_user = 'root';
   $db_password = 'root';
@@ -23,5 +29,5 @@
   echo '<br>';
   echo 'Host information: '.$mysqli->host_info;
   echo '<br>';
-  echo 'Protocol version: '.$mysqli->protocol_version;  */
+  echo 'Protocol version: '.$mysqli->protocol_version; */
 ?>

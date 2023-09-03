@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GOLDEN BAO</title>
+    <title>GOLDEN BAO | Sik Yum Wan</title>
     <link
       rel="icon"
       type="image/x-icon"
@@ -30,6 +30,7 @@
   </head>
 
   <body>
+    
     <!--NAV BAR-->
     <nav>
       <a class="arch bounce-ani" href="../index.html"
@@ -99,25 +100,61 @@
         </p>
 
         <!--form entry area-->
-        <form>
+        <form method="post">
           <select id="eatery" name="eatery" class="bounce-ani">
-            <option value="db">Dragon Boat</option>
-            <option value="cbd">Cafe BBQ Duck</option>
-            <option value="swc">Sun World Chinese</option>
-            <option value="sh">Sunrise HongKong</option>
-            <option value="wts">Woos - The Stall</option>
+            <option name ="db" value="db">Dragon Boat</option>
+            <option name="cbd" value="cbd">Cafe BBQ Duck</option>
+            <option name="swc" value="swc">Sun World Chinese</option>
+            <option name="sh" value="sh">Sunrise HongKong</option>
+            <option name="wts" value="wts">Woos - The Stall</option>
           </select>
           <textarea placeholder="Why do you vote for this eatery?"></textarea>
           <input type="submit" value="Submit" class="bounce-ani" />
+
+          <?php 
+        include '../connection.php'; 
+
+        
+/*         
+
+if(isset($_POST['submit']))
+
+          // get current number of votes from database
+          $eatery = $_POST['eatery'];
+          $reason = $_POST['reason'];
+
+          $sql = "SELECT eatery FROM votes";
+          $result = $mysqli->query($sql);
+
+          //add 1 to current vote count
+          $newResult = $result ++;
+                    
+          // submit new value into table
+          $sql = "UPDATE $eatery SET $vote = $vote +1 WHERE id=1 ";
+          $result = $mysqli->query($sql);
+
+          if($result == TRUE){
+              echo "Success! Refreshing in 3 seconds...";
+              echo '<img href="loading.gif">';
+              header("refresh:3;url=index.php");
+          }else {
+              echo "Error!<br>";
+              echo $mysqli->error;
+          } */
+
+        ?>
         </form>
+
+       
       </div>
 
       <!--cafe bbq duck-->
-      <div class="bbq-duck-item bg-img bounce-ani">
-        <h2 class="item-title">cafe bbq</h2>
-
-        <!-- <img src="../assets/images/cafe-bbq-duck.png" alt="cafe bbq duck" /> -->
-      </div>
+      
+        <div class="bbq-duck-item bg-img bounce-ani">
+        <a href="./store-detail.html" class="store-link">
+          <h2 class="item-title">cafe bbq</h2>
+        </a>
+        </div>
 
       <!--sun world chinese-->
       <div class="sun-world-item bounce-ani">
