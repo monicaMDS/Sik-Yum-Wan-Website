@@ -1,3 +1,70 @@
+/* MOBILE STYLING */
+
+#mb-landing-x-logo {
+  max-width: 100%;
+}
+
+.mb-landing {
+  display: none;
+  background-color: var(--orange);
+  color: var(--yellow);
+  font-size: clamp(1rem, 2rem, 3rem);
+  text-align: center;
+  font-weight: 900;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 1rem; */
+}
+
+.mb-down-btn {
+  padding: 3rem;
+}
+
+.mb-landing img {
+  max-width: 50%;
+  margin: 2rem;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.mb-landing p {
+  text-decoration: underline;
+}
+
+.mb-landing div {
+  padding: 1rem;
+  /* margin: 1rem; */
+}
+
+.mb-landing span {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.mb-check {
+  background-color: var(--orange);
+  border-radius: 60px;
+  border: 2px solid var(--yellow);
+}
+
+.mb-check p {
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.mb-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blue);
+  text-align: center;
+  margin: auto;
+}
+
 /* LANDING PAGE DECORATION */
 
 .landing-deco {
@@ -473,5 +540,19 @@ span {
 
   to {
     transform: translate(-100vw, 0);
+  }
+}
+
+@media screen and (width < 468px) {
+  .web-landing {
+    display: none;
+  }
+
+  .mb-landing {
+    display: flex;
+  }
+
+  .fa-2xl {
+    font-size: 0.5rem;
   }
 }

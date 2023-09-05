@@ -529,11 +529,15 @@ GOLDEN BAO STYLING
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-image: url(../assets/images/golden-bao-landing.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .gold-bao-land h1 {
   font-weight: 900;
-  font-size: 300px;
+  font-size: clamp(8rem, 15rem, 16rem);
 }
 
 .gold-bao-land h3 {
@@ -583,8 +587,8 @@ input[type="submit"] {
   background-color: var(--beige);
   color: var(--orange);
   font-weight: 700;
-  font-size: 1.5rem;
-  padding: 1rem;
+  font-size: 1.2rem;
+  padding: 0.5rem;
   width: 20%;
   border-radius: 60px;
 }
@@ -606,13 +610,13 @@ textarea {
   border: 6px solid var(--orange);
   background-color: var(--beige);
   color: var(--orange);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 
 select {
   width: 90%;
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 60px;
   border: 6px solid var(--orange);
   background-color: var(--beige);
@@ -630,16 +634,17 @@ select:hover {
 /* grid items */
 .vote-item {
   text-align: left;
+  max-height: 500%;
 }
 
 .vote-item h2 {
-  font-size: clamp(2rem, 3rem, 4rem);
+  font-size: clamp(1rem, 2.8rem, 3.5rem);
   font-weight: 900;
 }
 
 .vote-item p {
   font-weight: 700;
-  font-size: clamp(1rem, 1.5rem, 2rem);
+  font-size: clamp(0.5rem, 1.2rem, 2rem);
 }
 
 span {
@@ -654,7 +659,7 @@ span {
 /* DRAGON BOAT */
 .db-item {
   background-color: var(--yellow);
-  font-size: clamp(2rem, 8rem, 9rem);
+  font-size: clamp(2rem, 4rem, 6rem);
   background-image: url(../assets/images/yum-cha-select.png);
   background-size: cover;
   background-position: center;
@@ -844,9 +849,6 @@ span {
   margin: auto;
   max-height: 70vh;
   width: auto;
-}
-
-.store-name {
 }
 
 .store-details {
