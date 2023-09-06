@@ -77,60 +77,64 @@
       </p>
 
       <!--form entry area-->
-      <form method="post">
-        <select id="eateryForm" name="eatery" class="bounce-ani">
-          <option name="db" value="1">Dragon Boat</option>
-          <option name="cbd" value="2">Cafe BBQ Duck</option>
-          <option name="swc" value="3">Sun World Chinese</option>
-          <option name="sh" value="4">Sunrise HongKong</option>
-          <option name="wts" value="5">Woos - The Stall</option>
+      <form method="POST">
+        <select name="eatery" class="bounce-ani">
+          <option value="1">Dragon Boat</option>
+          <option value="2">Cafe BBQ Duck</option>
+          <option value="3">Sun World Chinese</option>
+          <option value="4">Sunrise HongKong</option>
+          <option value="5">Woos - The Stall</option>
         </select>
         <textarea placeholder="Why do you vote for this eatery?"></textarea>
         <input type="submit" value="Submit" class="bounce-ani" />
 
-
-
         <?php 
         include '../connection.php';
 
-        //once submit button is pressed
-        if(isset($_POST['submit']))
 
-          //put value into $id for sql query to find
-          $id = $_POST['eateryForm.value'];
-
-          //get current number of votes from database
-          $sql = "SELECT id, vote FROM eatery WHERE id = $id";
-          $currentVote = $mysqli->query($sql);
-
-          if ($result->num_rows > 0) {
-          // output data of each row
-          while($row = $currentVote->fetch_assoc()) {
-            echo "id: " . $row["id"]. " - vote: " . $row["vote"]". <br>";
-          }
-        } else {
-          echo "0 results";
-        }
+                  //put value into $id for sql query to find
+                  $selectId = $_POST['eatery'];
+                  echo "<script type='text/javascript'>alert('$selectId');</script>";
         
-          // get info from form
-          $eatery = $_POST['eatery'];
-          //$reason = $_POST['reason'];
+                   //get current number of votes from database
+                  $sql = "SELECT votes FROM eatery WHERE id = $selectId";
+                  $voteResult = $mysqli->query($sql);
+        
+                   if ($voteResult == TRUE) {
+                    $voteArray = $voteResult-> fetch_assoc();
+                    $currentVote = $voteArray["votes"];
 
-          //add 1 to current vote count
-          $newVote = $currentVote.['vote'] ++;
-                    
-          // submit new value into database
-          $sql = "UPDATE eatery SET votes = $newVote WHERE id=$currentVote.['id'] ";
-          $result = $mysqli->query($sql);
+                  // output data of each row
+                  echo "<script type='text/javascript'>alert('$currentVote');</script>";
 
-          if($result == TRUE){
-              echo "Success! Vote is submitted";
-          }else {
-              echo "Error!<br>";
-              echo $mysqli->error;
-          } 
+                  //add 1 to current vote count
+                  $newVote = $currentVote+= 1;
+                  echo "<script type='text/javascript'>alert('$newVote');</script>";
+
+                  // submit new value into database
+                  $sql = "UPDATE eatery SET votes = $newVote WHERE id = $selectId";
+                  $result = $mysqli->query($sql);
+
+                  if($result == TRUE){
+                    echo "<script type='text/javascript'>alert('Success! Vote is submitted');</script>";
+                  }else {
+                    echo "<script type='text/javascript'>alert('Error!<br>');</script>";
+                    echo "<script type='text/javascript'>alert('$mysqli->error');</script>";
+                  }
+
+                } else {
+                  echo "<script type='text/javascript'>alert('0 results');</script>";
+                }
+                  
+
+        //once submit button is pressed
+         if(isset($_POST['submit'])){
+
+
           
-          $conn->close();
+        }
+
+        $mysqli->close();
           
 
         ?>
