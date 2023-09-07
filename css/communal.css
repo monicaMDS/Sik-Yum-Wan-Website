@@ -538,7 +538,8 @@ GOLDEN BAO STYLING
 
 /* Voting Store grid */
 
-.store-grid {
+.store-grid,
+.landing-store-grid {
   height: 150vh;
   display: grid;
   text-align: center;
@@ -548,7 +549,8 @@ GOLDEN BAO STYLING
   color: var(--orange);
 }
 
-.store-grid div {
+.store-grid div,
+.landing-store-grid div {
   padding: 2rem;
   border: 2px solid var(--yellow);
 }
@@ -710,7 +712,7 @@ span {
   display: flex;
   justify-content: center;
   text-align: left;
-  font-size: clamp(1rem, 3rem, 5rem);
+  font-size: clamp(0.5rem, 2rem, 5rem);
 }
 
 .sun-world-item h2 {
@@ -721,7 +723,7 @@ span {
 .sun-world-item:hover {
   background-color: var(--blue);
   color: var(--yellow);
-  font-size: clamp(2rem, 3.3rem, 5.3rem);
+  font-size: clamp(1rem, 2.5rem, 3rem);
 }
 
 .sun-world-item:hover img {
@@ -729,7 +731,13 @@ span {
 }
 
 /* sunrise hong kong */
-.sun-hk-item {
+
+.landing-sun-hk-item {
+  grid-row: 2/4;
+}
+
+.sun-hk-item,
+.landing-sun-hk-item {
   background-color: var(--beige);
   text-align: left;
   display: flex;
@@ -737,13 +745,15 @@ span {
   align-items: center;
 }
 
-.sun-hk-item img {
+.sun-hk-item img,
+.landing-sun-hk-item img {
   max-width: 30%;
   height: auto;
   transition: 1s;
 }
 
-.sun-hk-item h2 {
+.sun-hk-item h2,
+.landing-sun-hk-item h2 {
   font-weight: 900;
   font-size: clamp(2rem, 6.5rem, 7rem);
 }
@@ -756,17 +766,20 @@ span {
     0 -4px var(--orange);
 }
 
-.sun-hk-item:hover {
+.sun-hk-item:hover,
+.landing-sun-hk-item:hover {
   background-color: var(--blue);
 }
 
-.sun-hk-item:hover img {
+.sun-hk-item:hover img,
+.landing-sun-hk-item:hover img {
   transform: rotate(180deg);
   transition: 1s;
 }
 
 .sun-hk-item:hover h2,
-.hk-item-title:hover {
+.hk-item-title:hover,
+.landing-sun-hk-item:hover h2 {
   color: var(--yellow);
 }
 
