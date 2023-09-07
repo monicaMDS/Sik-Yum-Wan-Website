@@ -1004,39 +1004,54 @@ span {
   margin: auto;
 }
 
-.event-content p {
-  font-weight: 500;
-  font-size: 36px;
+.mb-landing p {
+  text-decoration: underline;
 }
 
-hr {
-  color: var(--orange);
+.mb-landing div {
+  padding: 1rem;
+  /* margin: 1rem; */
 }
 
-.event-cat {
+.mb-landing span {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.mb-check {
+  background-color: var(--orange);
+  border-radius: 60px;
+  border: 2px solid var(--yellow);
+}
+
+.mb-check p {
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.mb-footer {
   display: flex;
-  gap: 2rem;
-}
-
-.event-cat h6 {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 40px;
-}
-
-.fav-btn {
-  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 3px solid var(--orange);
-  border-radius: 60px;
-  width: 681px;
-  height: 105px;
-  padding: 1rem;
-  color: var(--orange);
+  background-color: var(--blue);
+  text-align: center;
+  margin: auto;
 }
 
-.fav-btn h4 {
-  font-size: 40px;
-  color: var(--orange);
+/*  MOBILE SIK CAMPAIGN SITE */
+
+@media screen and (width < 468px) {
+  .web-landing {
+    display: none;
+  }
+
+  .mb-landing {
+    display: flex;
+  }
+
+  .fa-2xl {
+    font-size: 0.5rem;
+  }
 }
