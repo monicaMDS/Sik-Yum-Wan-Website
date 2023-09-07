@@ -1,10 +1,7 @@
 /******
- * LAZY SUSAN
+ * ANIM.JS
+ * for all animation, majorly the lazy susan
  ******/
-
-/* gsap.to(".lazy-susan-section ".backgroundImage, {
-  rotation: 360,
-}); */
 
 /***
  * SPIN FUNCTION
@@ -153,10 +150,6 @@ function moveWheel(amount, i, index) {
 //Resources;
 
 /******************
- * ITEM HOVERS
- ******************/
-
-/******************
  * LANDING PAGE HOVERS
  * ******************/
 
@@ -248,31 +241,3 @@ wanDescImg.addEventListener("mouseout", () => {
     scaleY: -1.7,
   });
 });
-/******************
- * EVENT PAGE HOVERS
- * ******************/
-
-/* const eventNav = documnet.querySelector(".event-nav-img");
-
-eventNav.addEventListener() */
-
-/* const heartO = document.querySelectorAll(".heart-o");
-console.log(heartO);
-
-heartO.addEventListener("click", (hearts) => {
-  console.log("heart clicked");
-  hearts.forEach((heart) => {
-    heart.setAttribute("src", "../assets/icons/heart-orange-hover.png");
-  }); */
-/*   gsap.fromTo(
-    heartO,
-    {
-      scale: 0.5,
-    },
-    {
-      duration: 0.5,
-      scale: 1,
-      ease: "bounce.out",
-    }
-  ); */
-/* }); */

@@ -1,8 +1,4 @@
 /* LANDING PAGE DECORATION */
-
-.landing-deco {
-}
-
 .landing-left {
   padding-top: 2rem;
   position: absolute;
@@ -427,19 +423,6 @@ span {
   display: block;
   margin: auto;
 }
-
-/*
-.resultMarquee {
-  animation: scroll 10s linear 0s infinite;
-  transform: rotate(-3deg);
-  width: 100%;
-  color: var(--yellow);
-  font-size: clamp(2rem, 4rem, 6rem);
-  font-weight: 900;
-  text-shadow: -2px 0 var(--black), 0 2px var(--black), 2px 0 var(--black),
-    0 -2px var(--black);
-  padding: 2rem;
-} */
 
 .overflow-x-hidden {
   width: 100%;

@@ -1,13 +1,7 @@
-/* document.querySelector(".mooncake-view-event").addEventListener("click", () => {
-  console.log("button clicked");
-}); */
-
-/* DESC OPEN CLOSE */
-
-/* let descClose = document.querySelector(".desc-close-btn");
-descClose.addEventListener("click", ()=>{
-  document.querySelector();
-}); */
+/**
+ * MAIN.JS 
+ * for the main javascript, other than animations
+ */
 
 //open search
 function openSearch() {
