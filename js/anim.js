@@ -1,10 +1,7 @@
 /******
- * LAZY SUSAN
+ * ANIM.JS
+ * for all animation, majorly the lazy susan
  ******/
-
-/* gsap.to(".lazy-susan-section ".backgroundImage, {
-  rotation: 360,
-}); */
 
 /***
  * SPIN FUNCTION
@@ -151,10 +148,6 @@ function moveWheel(amount, i, index) {
 }
 
 //Resources;
-
-/******************
- * ITEM HOVERS
- ******************/
 
 /******************
  * LANDING PAGE HOVERS

@@ -1,3 +1,8 @@
+/**
+ * MAIN.JS 
+ * for the main javascript, other than animations
+ */
+
 //open search
 let searchBtn = document.querySelector(".fa-magnifying-glass");
 

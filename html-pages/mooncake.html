@@ -8,77 +8,57 @@
   <title>Moon Cakeview | Sik Yum Wan</title>
   <link rel="icon" type="image/x-icon" href="../assets/logos/sik-favicon.png" />
 
-  <!--css links-->
-  <link rel="stylesheet" href="../css/communal.css" />
-  <link rel="stylesheet" href="../css/home.css" />
-  <link rel="stylesheet" href="../css/transitions.css" />
-  <script src="https://kit.fontawesome.com/02b16f4b0b.js" crossorigin="anonymous"></script>
+    <!--css links-->
+    <link rel="stylesheet" href="../css/communal.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/transitions.css" />
+    <script
+      src="https://kit.fontawesome.com/02b16f4b0b.js"
+      crossorigin="anonymous"
+    ></script>
 
   <!--adobe font link-->
   <link rel="stylesheet" href="https://use.typekit.net/czm7smv.css" />
 
-  <!--javascript links-->
-  <script src="./js/script.js" defer></script>
+    <!--javascript links-->
+    <script src="../js/script.js" defer></script>
 
-  <!--GSAP animation links-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
-</head>
+    <!--GSAP animation links-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+  </head>
 
 <body>
-  <!--NAV BAR-->
+  <!--NAVIGATION-->
   <nav>
-    <a class="arch bounce-ani" href="../index.html"><img class="landing-x-logo" src="../assets/logos/full-logo-x.png"
-        alt="x axis sik yum wan logo" /></a>
     <ul>
-      <a href=""><i class="fa-solid fa-magnifying-glass fa-2xl"></i></a>
-      <a href="javascript:void(0)" class="open-btn bounce-ani" onclick="openNav()"><i
-          class="fa-solid fa-bars fa-2xl"></i></a>
+      <i class="fa-solid fa-bars fa-2xl"></i>
+      <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
     </ul>
+    <img src="../assets/logos/full-logo-x.png" alt="sik yum logo x axis" />
   </nav>
 
-  <!--side nav-->
-  <section class="side-nav bounce-ani">
-    <a href="javascript:void(0)" class="close-btn bounce-ani" onclick="closeNav()">&times;</a>
-    <img class="side-logo" src="../assets/logos/full-logo-x.png" alt="sik yum wan x logo" />
-    <div>
-      <img src="../assets/logos/sik-logo.png" alt="sik logo" />
-      <img src="../assets/logos/yum-logo.png" alt="yum logo" />
-      <img src="../assets/logos/wan-logo.png" alt="wan logo" />
-    </div>
-    <li>
-      <a href="../index.html">home</a>
-      <a href="./html-pages/profile.html">profile</a>
-      <a href="./html-pages/event.html">events</a>
-      <a href="./golden-bao.php">golden bao</a>
-    </li>
-  </section>
-
-  <header class="event-header">
-    <h3>29 <br>sept<br> 2023</h3>
-    <img class="event-header-img" src="../assets/event-images/mooncake-custom.png" alt="moon cake big img" />
-
-    <div class="event-logo-div">
-      <img class="event-logo" src="../assets/logos/sik-logo.png" alt=" sik logo" />
-      <img class="event-logo" src="../assets/logos/wan-logo.png" alt="wan logo" />
-    </div>
-  </header>
-
-  <section class="event-detail-section">
-    <div class="event-details">
-      <h1>moon cakeview</h1>
-      <h3>Ellen Melville Centre</h3>
-      <div class="event-detail-cat">
-        <h4>sik</h4>
-        <svg class="event-svg" viewBox="0 0 18 18" fill="none">
-          <circle cx="9" cy="9" r="1" fill="#F24128" />
-        </svg>
-        <h4>wan</h4>
+    <header>
+      <h3>29 sept 2023</h3>
+      <img src="#" alt="moon cake big img" />
+      <div>
+        <img src="../assets/logos/sik-logo.png" alt="sik logo" />
+        <img src="../assets/logos/wan-logo.png" alt="wan logo" />
       </div>
-      <img src="../assets/icons/heart-orange-default.png" alt="favourite heart default" />
-    </div>
+    </header>
 
-    <div class="event-content">
+    <section>
+      <div>
+        <h1>moon cakeview</h1>
+        <h3>ellen melville centre</h3>
+        <h4>sik</h4>
+        <h4>wan</h4>
+        <img
+          src="../assets/icons/heart-orange-default.png"
+          alt="favourite heart default"
+        />
+      </div>
+
       <div>
         <img src="#" alt="moon cake img" />
         <div>
@@ -92,6 +72,7 @@
             <p>date</p>
           </div>
         </div>
+
         <!--second half-->
         <div>
           <div>
@@ -101,56 +82,57 @@
             <button>buy tickets</button>
           </div>
         </div>
+
         <!--map location-->
         <div></div>
         <img src="#" alt="moon cake img" />
       </div>
       <!--ending detail div tag-->
+
       <p>
         Join us for an enchanting evening under the shimmering moonlight as we
         celebrate the traditional Mid-Autumn Festival with a delightful twist!
       </p>
+
       <p>
         Indulge in the rich experience of savouring an array of exquisite
         mooncakes while immersing yourself in the tranquil beauty of
         moon-viewing.
       </p>
+
       <!--TAGS FOR EVENT-->
       <div>
-        <hr>
-        <div class="event-cat">
+        <br />
+        <div>
           <h6>sik</h6>
-          <svg class="event-svg" viewBox="0 0 18 18" fill="none">
-            <circle cx="9" cy="9" r="1" fill="#F24128" />
-          </svg>
           <h6>wan</h6>
-          <svg class="event-svg" viewBox="0 0 18 18" fill="none">
-            <circle cx="9" cy="9" r="1" fill="#F24128" />
-          </svg>
           <h6>aklcbd</h6>
-          <svg class="event-svg" viewBox="0 0 18 18" fill="none">
-            <circle cx="9" cy="9" r="1" fill="#F24128" />
-          </svg>
           <h6>mid-autumn festival</h6>
         </div>
       </div>
+
       <div class="fav-btn">
         <h4>add to favourites</h4>
-        <img src="../assets/icons/heart-orange-default.png" alt="favourite heart default" />
+        <img
+          src="../assets/icons/heart-orange-default.png"
+          alt="favourite heart default"
+        />
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!--FOOTER  -->
-  <footer>
-    <img src="../assets/logos/footer-chinese-logo.png" alt="chinese sik yum wan" />
-    <img src="../assets/logos/full-logo-x.png" />
-    <li>
-      <a href="../index.html">home</a>
-      <a href="./html-pages/profile.html">profile</a>
-      <a href="./html-pages/event.html">events</a>
-      <a href="./html-pages/golden-bao.html">golden bao</a>
-    </li>
+    <!--FOOTER  -->
+    <footer>
+      <img
+        src="../assets/logos/footer-chinese-logo.png"
+        alt="chinese sik yum wan"
+      />
+      <img src="../assets/logos/full-logo-x.png" />
+      <li>
+        <a href="../index.html">home</a>
+        <a href="./html-pages/profile.html">profile</a>
+        <a href="./html-pages/event.html">events</a>
+        <a href="./html-pages/golden-bao.html">golden bao</a>
+      </li>
 
     <img class="to-top" src="../assets/icons/to-top-default.png" />
   </footer>
