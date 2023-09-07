@@ -496,17 +496,17 @@ span {
   overflow: hidden;
   padding-top: 100px;
   padding-bottom: 100px;
-  margin-bottom: -100px;
-  margin-top: -100px;
-  animation: scroll 10s linear infinite;
-  animation-duration: 12s;
+  margin-bottom: -0px;
+  margin-top: 0px;
+  transform: rotate(-3deg);
 }
 
 .ticket-wrapper {
-  transform: rotate(-3deg);
-  width: 300vw;
+  width: 200%;
   height: auto;
   background-image: url(../assets/images/ticket.png);
+  animation: scroll 10s linear infinite;
+  animation-duration: 200s;
   background-size: auto 100%;
 }
 
@@ -517,12 +517,12 @@ span {
 }
 
 @keyframes scroll {
-  from {
+  0% {
     transform: translate(0%, 0);
   }
 
-  to {
-    transform: translate(-100vw, 0);
+  100% {
+    transform: translate(-100%, 0);
   }
 }
 
